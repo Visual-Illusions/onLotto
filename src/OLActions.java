@@ -2,6 +2,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+* onLotto v1.x
+* Copyright (C) 2012 Visual Illusions Entertainment
+* @author darkdiplomat <darkdiplomat@visualillusionsent.net>
+* 
+* This file is part of onLotto
+* 
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see http://www.gnu.org/copyleft/gpl.html.
+*/
+
 public class OLActions {
 	Server server = etc.getServer();
 	OLData OLD;
@@ -92,7 +113,7 @@ public class OLActions {
 		return true;
 	}
 	
-	public String timeUntil(long time) {
+	private String timeUntil(long time) {
 		if(!drawing){
 			double timeLeft = Double.parseDouble(Long.toString(((time - System.currentTimeMillis()) / 1000)));
 			StringBuffer Time = new StringBuffer();
@@ -145,33 +166,34 @@ public class OLActions {
 		}
 	}
 	
-	public void addItem(Inventory inv, int ID, int Damage, int amount){
+	private void addItem(Inventory inv, int ID, int Damage, int amount){
 		for (int i = 0; i < inv.getContentsSize(); i++){
 			if (amount > 0){
 				Item item = inv.getItemFromSlot(i);
 				if (item != null){
+					int iam = item.getAmount();
 					if (item.getItemId() == ID){
 						if (item.getDamage() == Damage){
 							if (amount > 64){
-								if(item.getAmount() < 64){
-									inv.removeItem(i);
-									inv.setSlot(ID, 64, Damage, i);
-									inv.update();
-									amount -= item.getAmount();
+								if(iam < amount){
+									item.setAmount(64);
+									amount -= (64 - iam);
 								}
 								else{
-									continue;
+									if(iam < amount){
+										item.setAmount(iam+amount);
+										amount -= (64 - iam);
+									}
 								}
 							}
 							else{
-								if(item.getAmount() < 64){
-									inv.removeItem(i);
-									inv.setSlot(ID, amount+item.getAmount(), Damage, i);
-									inv.update();
-									amount -= item.getAmount();
+								if(iam < 64 && (iam+amount < 64)){
+									item.setAmount(iam+amount);
+									amount -= (64 - iam);
 								}
 								else{
-									continue;
+									item.setAmount(64);
+									amount -= (64-iam);
 								}
 							}
 						}
@@ -180,13 +202,11 @@ public class OLActions {
 				else{
 					if (amount > 64){
 						inv.setSlot(ID, 64, Damage, i);
-						inv.update();
 						amount -= 64;
 					}
 					else{
 						inv.setSlot(ID, amount, Damage, i);
-						inv.update();
-						break;
+						amount = 0;
 					}
 				}
 			}
@@ -194,10 +214,9 @@ public class OLActions {
 				break;
 			}
 		}
-		return;
 	}
 	
-	public boolean CanUseGive(Player player){
+	private boolean CanUseGive(Player player){
 		if((player.canUseCommand("/give")) || (player.canUseCommand("/i")) || (player.canUseCommand("/item"))){
 			return true;
 		}
