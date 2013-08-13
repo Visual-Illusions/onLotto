@@ -1,7 +1,7 @@
 /*
  * This file is part of onLotto.
  *
- * Copyright © 2011 Visual Illusions Entertainment
+ * Copyright © 2011-2013 Visual Illusions Entertainment
  *
  * onLotto is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

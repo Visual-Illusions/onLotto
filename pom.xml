@@ -148,7 +148,7 @@
           </mapping>
           <properties>
             <name>${project.name}</name>
-            <copyright>Copyright © ${project.inceptionYear} Visual Illusions Entertainment</copyright>
+            <copyright>Copyright © ${project.inceptionYear}-2013 Visual Illusions Entertainment</copyright>
            </properties>
            <includes>
             <include>src/main/java/**</include>
