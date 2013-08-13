@@ -96,6 +96,10 @@ public final class OnLotto extends Plugin {
         return true;
     }
 
+    final int maxWinners() {
+        return lottoProps.getInt("max.winners");
+    }
+
     final String timeUntil() {
         return String.format("%sNext Drawing in%s %s", TextFormat.GREEN, TextFormat.YELLOW, ToolBox.getTimeUntil(started, (getDelayTime() / 1000)));
     }
@@ -111,6 +115,8 @@ public final class OnLotto extends Plugin {
         lottoProps = new PropertiesFile("config/onLotto/onLotto.cfg");
         lottoProps.getBoolean("everyone.wins", true);
         lottoProps.setComments("everyone.wins", "Set to true to give all online users a random item (minus those in disabled groups)");
+        lottoProps.getInt("max.winners", 1);
+        lottoProps.setComments("max.winners", "The number of winners to choose unless everyone.wins is set");
         lottoProps.getStringArray("disabled.groups", new String[] { "admins", "mods", "visitors" });
         lottoProps.setComments("disabled.groups", "The names of the groups to not allow winning. No parent checking is done so every group needs to be directly specified. Seperate names with commas");
         lottoProps.getLong("draw.delay", 1L);
