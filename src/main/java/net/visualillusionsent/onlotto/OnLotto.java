@@ -17,48 +17,32 @@
  */
 package net.visualillusionsent.onlotto;
 
-import java.io.IOException;
-import java.util.Timer;
-import java.util.jar.Attributes;
-import java.util.jar.JarFile;
-import java.util.jar.Manifest;
 import net.canarymod.ToolBox;
 import net.canarymod.api.entity.living.humanoid.Player;
 import net.canarymod.chat.TextFormat;
-import net.canarymod.plugin.Plugin;
-import net.visualillusionsent.utils.ProgramStatus;
+import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPlugin;
 import net.visualillusionsent.utils.PropertiesFile;
-import net.visualillusionsent.utils.VersionChecker;
 
-public final class OnLotto extends Plugin {
+import java.util.Timer;
+
+public final class OnLotto extends VisualIllusionsCanaryPlugin {
 
     private Timer lottoTimer;
     private PropertiesFile lottoProps;
     private long started;
     private WeightedItem[] items;
 
-    /* VERSION CONTROL */
-    private final VersionChecker vc;
-    private float version;
-    private short build;
-    private String buildTime;
-    private ProgramStatus status;
-
-    public OnLotto() {
-        readManifest();
-        vc = new VersionChecker(getName(), String.valueOf(version), String.valueOf(build), "http://visualillusionsent.net/minecraft/plugins/", status, false);
-    }
-
     @Override
     public final boolean enable() {
         try {
+            checkStatus();
+            checkVersion();
             loadProps();
             items = new ItemLoader().load(this).toArray(new WeightedItem[0]);
             lottoTimer = new Timer();
             lottoTimer.scheduleAtFixedRate(new LottoTask(this), getStartTime(), getDelayTime());
             new LottoCommandHandler(this);
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
             getLogman().logStacktrace("Failed to enable onLotto...", ex);
             if (lottoTimer != null) {
                 lottoTimer.cancel();
@@ -117,7 +101,7 @@ public final class OnLotto extends Plugin {
         lottoProps.setComments("everyone.wins", "Set to true to give all online users a random item (minus those in disabled groups)");
         lottoProps.getInt("max.winners", 1);
         lottoProps.setComments("max.winners", "The number of winners to choose unless everyone.wins is set");
-        lottoProps.getStringArray("disabled.groups", new String[] { "admins", "mods", "visitors" });
+        lottoProps.getStringArray("disabled.groups", new String[]{"admins", "mods", "visitors"});
         lottoProps.setComments("disabled.groups", "The names of the groups to not allow winning. No parent checking is done so every group needs to be directly specified. Seperate names with commas");
         lottoProps.getLong("draw.delay", 1L);
         lottoProps.setComments("draw.delay", "The time in minutes between drawings");
@@ -134,94 +118,5 @@ public final class OnLotto extends Plugin {
     public long getDelayTime() {
         long time = lottoProps.getLong("draw.delay") * 60000;
         return time < 60000L ? 60000L : time;
-    }
-
-    /* VERSIONING GETTERS */
-    final Manifest getManifest() throws Exception {
-        Manifest toRet = null;
-        Exception ex = null;
-        JarFile jar = null;
-        try {
-            jar = new JarFile(getJarPath());
-            toRet = jar.getManifest();
-        }
-        catch (Exception e) {
-            ex = e;
-        }
-        finally {
-            if (jar != null) {
-                try {
-                    jar.close();
-                }
-                catch (IOException e) {}
-            }
-            if (ex != null) {
-                throw ex;
-            }
-        }
-        return toRet;
-    }
-
-    final void readManifest() {
-        try {
-            Manifest manifest = getManifest();
-            Attributes mainAttribs = manifest.getMainAttributes();
-            version = Float.parseFloat(mainAttribs.getValue("Version").replace("-SNAPSHOT", ""));
-            build = Short.parseShort(mainAttribs.getValue("Build"));
-            buildTime = mainAttribs.getValue("Build-Time");
-            try {
-                status = ProgramStatus.valueOf(mainAttribs.getValue("ProgramStatus"));
-            }
-            catch (IllegalArgumentException iaex) {
-                status = ProgramStatus.UNKNOWN;
-            }
-        }
-        catch (Exception ex) {
-            version = -1.0F;
-            build = -1;
-            buildTime = "19700101-0000";
-        }
-    }
-
-    final void checkStatus() {
-        if (status == ProgramStatus.UNKNOWN) {
-            getLogman().severe(String.format("%s has declared itself as an 'UNKNOWN STATUS' build. Use is not advised and could cause damage to your system!", getName()));
-        }
-        else if (status == ProgramStatus.ALPHA) {
-            getLogman().warning(String.format("%s has declared itself as a 'ALPHA' build. Production use is not advised!", getName()));
-        }
-        else if (status == ProgramStatus.BETA) {
-            getLogman().warning(String.format("%s has declared itself as a 'BETA' build. Production use is not advised!", getName()));
-        }
-        else if (status == ProgramStatus.RELEASE_CANDIDATE) {
-            getLogman().info(String.format("%s has declared itself as a 'Release Candidate' build. Expect some bugs.", getName()));
-        }
-    }
-
-    final void checkVersion() {
-        Boolean islatest = vc.isLatest();
-        if (islatest == null) {
-            getLogman().warning("VersionCheckerError: " + vc.getErrorMessage());
-        }
-        else if (!vc.isLatest()) {
-            getLogman().warning(vc.getUpdateAvailibleMessage());
-            getLogman().warning(String.format("You can view update info @ http://wiki.visualillusionsent.net/%s#ChangeLog", getName()));
-        }
-    }
-
-    final float getRawVersion() {
-        return version;
-    }
-
-    final short getBuildNumber() {
-        return build;
-    }
-
-    final String getBuildTime() {
-        return buildTime;
-    }
-
-    final VersionChecker getVersionChecker() {
-        return vc;
     }
 }

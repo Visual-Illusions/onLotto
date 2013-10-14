@@ -17,19 +17,14 @@
  */
 package net.visualillusionsent.onlotto;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-import java.util.TimerTask;
 import net.canarymod.Canary;
 import net.canarymod.ToolBox;
 import net.canarymod.api.entity.living.humanoid.Player;
 import net.canarymod.api.inventory.Item;
 import net.canarymod.api.inventory.ItemType;
 import net.canarymod.chat.TextFormat;
+
+import java.util.*;
 
 public final class LottoTask extends TimerTask {
 
@@ -61,8 +56,7 @@ public final class LottoTask extends TimerTask {
             onlotto.getLogman().logInfo(String.format("Lottery Drawn! %s", winners.toString()));
             onlotto.setStart(ToolBox.getUnixTimestamp());
             Canary.getServer().broadcastMessage(onlotto.timeUntil());
-        }
-        else {
+        } else {
             getRandomWinners();
         }
     }
@@ -79,8 +73,7 @@ public final class LottoTask extends TimerTask {
         }
         if (players.isEmpty()) {
             Canary.getServer().broadcastMessage("No one online eligable to win...");
-        }
-        else {
+        } else {
             ArrayList<String> winners = new ArrayList<String>();
             for (int count = 0; count < onlotto.maxWinners(); count++) {
                 if (players.isEmpty() || players.size() <= count) {

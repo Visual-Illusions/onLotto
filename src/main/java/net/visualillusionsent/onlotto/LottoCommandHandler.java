@@ -17,66 +17,43 @@
  */
 package net.visualillusionsent.onlotto;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import net.canarymod.Canary;
 import net.canarymod.chat.Colors;
 import net.canarymod.chat.MessageReceiver;
-import net.canarymod.chat.TextFormat;
 import net.canarymod.commandsys.Command;
 import net.canarymod.commandsys.CommandDependencyException;
-import net.canarymod.commandsys.CommandListener;
-import net.visualillusionsent.utils.StringUtils;
+import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPluginInformationCommand;
 import net.visualillusionsent.utils.VersionChecker;
 
-public class LottoCommandHandler implements CommandListener {
-
+public class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationCommand {
     private final OnLotto onlotto;
-    private final List<String> about;
 
     public LottoCommandHandler(OnLotto onlotto) throws CommandDependencyException {
+        super(onlotto);
         Canary.commands().registerCommands(this, onlotto, false);
         this.onlotto = onlotto;
-
-        List<String> pre = new ArrayList<String>();
-        pre.add(center(Colors.CYAN + "--- " + Colors.LIGHT_GREEN + onlotto.getName() + Colors.ORANGE + " v" + onlotto.getRawVersion() + Colors.CYAN + " ---"));
-        pre.add("$VERSION_CHECK$");
-        pre.add(Colors.ORANGE + "Build: " + Colors.LIGHT_GREEN + onlotto.getBuildNumber());
-        pre.add(Colors.ORANGE + "Built: " + Colors.LIGHT_GREEN + onlotto.getBuildTime());
-        pre.add(Colors.ORANGE + "Developers: " + Colors.LIGHT_GREEN + "DarkDiplomat");
-        pre.add(Colors.ORANGE + "Website: " + Colors.LIGHT_GREEN + "http://wiki.visualillusionsent.net/onLotto");
-        pre.add(Colors.ORANGE + "Issues: " + Colors.LIGHT_GREEN + "http://git.io/");
-
-        // Next line should always remain at the end of the About
-        pre.add(center("§aCopyright © 2011-2013 §2Visual §6I§9l§bl§4u§as§2i§5o§en§7s §2Entertainment"));
-        about = Collections.unmodifiableList(pre);
     }
 
-    @Command(aliases = { "onlotto" },
-        description = "Information Command",
-        permissions = { "" },
-        toolTip = "/onlotto")
+    @Command(aliases = {"onlotto"},
+            description = "Information Command",
+            permissions = {""},
+            toolTip = "/onlotto")
     public final void lottobase(MessageReceiver msgrec, String[] args) {
         for (String msg : about) {
             if (msg.equals("$VERSION_CHECK$")) {
-                VersionChecker vc = onlotto.getVersionChecker();
-                Boolean islatest = vc.isLatest();
-                if (islatest == null) {
+                VersionChecker vc = plugin.getVersionChecker();
+                Boolean isLatest = vc.isLatest();
+                if (isLatest == null) {
                     msgrec.message(center(Colors.GRAY + "VersionCheckerError: " + vc.getErrorMessage()));
-                }
-                else if (!vc.isLatest()) {
+                } else if (!vc.isLatest()) {
                     msgrec.message(center(Colors.GRAY + vc.getUpdateAvailibleMessage()));
-                }
-                else {
+                } else {
                     msgrec.message(center(Colors.LIGHT_GREEN + "Latest Version Installed"));
                 }
-            }
-            else {
+            } else {
                 msgrec.message(msg);
             }
         }
-        // Win Eligable?
 
         //-- Help --
         msgrec.message("§2/onLotto time §6- displays time till drawing");
@@ -86,31 +63,31 @@ public class LottoCommandHandler implements CommandListener {
         }
     }
 
+    @Command(aliases = {"time"},
+            description = "Returns time till draw",
+            permissions = {"onlotto.time"},
+            toolTip = "/onlotto time",
+            parent = "onlotto")
     public final void lottoTime(MessageReceiver msgrec, String[] args) {
         msgrec.message(onlotto.timeUntil());
     }
 
-    @Command(aliases = { "broadcast" },
-        description = "Broadcasts time till draw",
-        permissions = { "onlotto.broadcast" },
-        toolTip = "/onlotto broadcast",
-        parent = "onlotto")
+    @Command(aliases = {"broadcast"},
+            description = "Broadcasts time till draw",
+            permissions = {"onlotto.broadcast"},
+            toolTip = "/onlotto broadcast",
+            parent = "onlotto")
     public final void lottoBroadcast(MessageReceiver msgrec, String[] args) {
         Canary.getServer().broadcastMessage(onlotto.timeUntil());
     }
 
-    @Command(aliases = { "draw" },
-        description = "Force draws the lotto",
-        permissions = { "onlotto.draw" },
-        toolTip = "/onlotto broadcast",
-        parent = "onlotto")
+    @Command(aliases = {"draw"},
+            description = "Force draws the lotto",
+            permissions = {"onlotto.draw"},
+            toolTip = "/onlotto broadcast",
+            parent = "onlotto")
     public final void lottodraw(MessageReceiver msgrec, String[] args) {
         onlotto.restartTimer();
         new LottoTask(onlotto).run();
-    }
-
-    private final String center(String toCenter) {
-        String strColorless = TextFormat.removeFormatting(toCenter);
-        return StringUtils.padCharLeft(toCenter, (int) (Math.floor(63 - strColorless.length()) / 2), ' ');
     }
 }

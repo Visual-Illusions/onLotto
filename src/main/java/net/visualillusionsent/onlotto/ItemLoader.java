@@ -17,9 +17,6 @@
  */
 package net.visualillusionsent.onlotto;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import net.canarymod.Canary;
 import net.canarymod.api.inventory.ItemType;
 import net.visualillusionsent.utils.FileUtils;
@@ -27,6 +24,10 @@ import org.jdom2.DataConversionException;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 final class ItemLoader {
 
@@ -51,13 +52,11 @@ final class ItemLoader {
                     double weight = item.getAttribute("weight").getDoubleValue();
                     if (ItemType.fromId(id) != null) {
                         item_list.add(new WeightedItem(Canary.factory().getItemFactory().newItem(id, damage, amount), weight));
-                    }
-                    else {
-                        onlotto.getLogman().logWarning("Tried to load a non-existant item: ID=" + id);
+                    } else {
+                        onlotto.getLogman().logWarning("Tried to load a non-existent item: ID=" + id);
                     }
                 }
-            }
-            catch (DataConversionException dcex) {
+            } catch (DataConversionException dcex) {
                 onlotto.getLogman().logStacktrace("Failed to load an Item...", dcex);
                 continue;
             }
