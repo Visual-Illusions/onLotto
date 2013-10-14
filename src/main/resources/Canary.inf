@@ -1,4 +1,16 @@
-main-class=net.visualillusionsent.onlotto.OnLotto
-name=onLotto
+;# {name} - Canary Plugin Configuration File
+;# Copyright © {copyright.years} Visual Illusions Entertainment
+name={name}
+main-class={canary.main.class}
 author=Visual Illusions Entertainment
-version=2.0
+version={plugin.version}
+
+;Visual Illusions Specific Settings
+developers={devs}
+build.number={build}
+build.time={build.time}
+program.status={program.status}
+version.check.url={version.check.url}
+wiki.url={wiki}
+issues.url={issues}
+copyright.years={copyright.years}
