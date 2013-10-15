@@ -8,555 +8,546 @@
     <item id="3" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dirt -->
     <item id="4" damage="0" amount="1" weight="5" enabled="true"/> <!-- CobbleStone -->
     <item id="5" damage="0" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Oak) -->
-    <item id="5" damage="1" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Birch) -->
-    <item id="5" damage="2" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Spruce)  -->
+    <item id="5" damage="1" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Spruce) -->
+    <item id="5" damage="2" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Birch)  -->
     <item id="5" damage="3" amount="1" weight="5" enabled="true"/> <!-- WoodenPlanks (Jungle) -->
     <item id="6" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sapling (Oak) -->
-    <item id="6" damage="1" amount="1" weight="5" enabled="true"/> <!-- Sapling (Birch) -->
-    <item id="6" damage="2" amount="1" weight="5" enabled="true"/> <!-- Sapling (Spruce) -->
+    <item id="6" damage="1" amount="1" weight="5" enabled="true"/> <!-- Sapling (Spruce) -->
+    <item id="6" damage="2" amount="1" weight="5" enabled="true"/> <!-- Sapling (Birch) -->
     <item id="6" damage="3" amount="1" weight="5" enabled="true"/> <!-- Sapling (Jungle) -->
     <item id="7" damage="0" amount="1" weight="0" enabled="false"/> <!-- Bedrock -->
     <item id="8" damage="0" amount="1" weight="0" enabled="false"/> <!-- Water (source) -->
     <item id="9" damage="0" amount="1" weight="0" enabled="false"/> <!-- Water (flowing) -->
     <item id="10" damage="0" amount="1" weight="0" enabled="false"/> <!-- Lava (source) -->
     <item id="11" damage="0" amount="1" weight="0" enabled="false"/> <!-- Lava (flowing) -->
-    <item id="12" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="13" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="14" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="15" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="16" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="17" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="17" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="17" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="17" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="18" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="18" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="18" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="18" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="19" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="20" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="21" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="22" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="23" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="24" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="24" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="24" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="25" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="26" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="27" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="28" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="29" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="30" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="31" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="31" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="31" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="32" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="33" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="34" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="35" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="8" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="9" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="10" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="11" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="12" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="13" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="14" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="35" damage="15" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="36" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="37" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="38" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="39" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="40" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="41" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="42" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="8" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="43" damage="9" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="44" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="45" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="46" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="47" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="48" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="49" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="50" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="51" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="52" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="53" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="54" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="55" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="56" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="57" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="58" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="59" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="60" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="61" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="62" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="63" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="64" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="65" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="66" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="67" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="68" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="69" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="70" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="71" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="72" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="73" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="74" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="75" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="76" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="77" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="78" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="79" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="80" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="81" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="82" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="83" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="84" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="85" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="86" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="87" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="88" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="89" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="90" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="91" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="92" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="93" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="94" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="95" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="96" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="97" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="97" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="97" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="98" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="98" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="98" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="98" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="99" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="100" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="101" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="102" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="103" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="104" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="105" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="106" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="107" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="108" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="109" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="110" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="111" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="112" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="113" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="114" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="115" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="116" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="117" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="118" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="119" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="120" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="121" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="122" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="123" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="124" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="125" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="125" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="125" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="125" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="126" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="126" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="126" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="126" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="127" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="128" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="129" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="130" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="131" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="133" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="134" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="135" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="136" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="137" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="138" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="139" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="139" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="140" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="141" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="142" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="143" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="144" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="144" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="144" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="144" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="144" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="145" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="145" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="145" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="146" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="147" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="148" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="149" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="150" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="151" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="152" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="153" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="154" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="155" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="155" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="155" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="156" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="157" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="158" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="8" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="9" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="10" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="11" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="12" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="13" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="14" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="159" damage="15" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="160" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="161" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="162" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="163" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="164" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="165" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="166" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="167" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="168" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="169" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="170" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="171" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="8" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="9" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="10" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="11" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="12" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="13" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="14" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="171" damage="15" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="172" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="173" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="256" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="257" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="258" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="259" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="260" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="261" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="262" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="263" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="263" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="264" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="265" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="266" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="267" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="268" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="269" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="270" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="271" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="272" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="273" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="274" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="275" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="276" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="277" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="278" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="279" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="280" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="281" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="282" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="283" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="284" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="285" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="286" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="287" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="288" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="289" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="290" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="291" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="292" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="293" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="294" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="295" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="296" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="297" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="298" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="299" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="300" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="301" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="302" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="303" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="304" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="305" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="306" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="307" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="308" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="309" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="310" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="311" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="312" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="313" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="314" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="315" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="316" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="317" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="318" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="319" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="320" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="321" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="322" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="322" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="323" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="324" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="325" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="326" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="327" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="328" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="329" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="330" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="331" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="332" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="333" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="334" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="335" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="336" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="337" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="338" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="339" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="340" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="341" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="342" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="343" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="344" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="345" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="346" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="347" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="348" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="349" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="350" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="5" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="6" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="7" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="8" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="9" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="10" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="11" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="12" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="13" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="14" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="351" damage="15" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="352" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="353" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="354" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="355" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="356" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="357" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="358" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="359" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="360" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="361" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="362" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="363" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="364" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="365" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="366" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="367" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="368" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="369" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="370" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="371" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="372" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="32" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="64" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8192" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8193" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8194" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8195" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8196" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8197" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8200" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8201" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8202" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8204" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8225" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8226" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8227" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8228" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8229" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8232" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8233" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8234" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8236" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8257" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8258" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8259" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8260" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8261" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8264" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8265" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8266" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="8268" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16384" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16385" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16386" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16387" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16388" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16389" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16392" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16393" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16394" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16396" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16417" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16418" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16419" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16420" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16421" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16424" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16425" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16426" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16428" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16449" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16450" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16451" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16452" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16453" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16456" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16457" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16458" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="373" damage="16460" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="374" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="375" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="376" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="377" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="378" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="379" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="380" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="381" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="382" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="50" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="51" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="52" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="54" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="55" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="56" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="57" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="58" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="59" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="60" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="61" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="62" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="90" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="91" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="92" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="93" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="94" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="95" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="96" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="383" damage="120" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="384" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="385" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="386" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="387" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="388" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="389" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="390" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="391" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="392" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="393" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="394" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="395" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="396" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="397" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="397" damage="1" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="397" damage="2" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="397" damage="3" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="397" damage="4" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="398" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="399" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="400" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="401" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="402" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="403" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="404" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="405" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="406" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="407" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="406" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="407" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="408" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="409" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="410" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="411" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="412" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="413" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="414" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="415" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="416" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="417" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="418" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="419" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="420" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="421" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="422" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="423" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="424" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="425" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="426" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="427" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="428" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="429" damage="0" amount="1" weight="0" enabled="false"/> <!--  -->
-    <item id="2256" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2257" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2258" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2259" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2260" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2261" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2262" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2263" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2264" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2265" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2266" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
-    <item id="2267" damage="0" amount="1" weight="5" enabled="true"/> <!--  -->
+    <item id="12" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sand -->
+    <item id="13" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gravel -->
+    <item id="14" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Ore -->
+    <item id="15" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Ore -->
+    <item id="16" damage="0" amount="1" weight="5" enabled="true"/> <!-- Coal Ore -->
+    <item id="17" damage="0" amount="1" weight="5" enabled="true"/> <!-- Oak Log -->
+    <item id="17" damage="1" amount="1" weight="5" enabled="true"/> <!-- Spruce Log -->
+    <item id="17" damage="2" amount="1" weight="5" enabled="true"/> <!-- Birch Log -->
+    <item id="17" damage="3" amount="1" weight="5" enabled="true"/> <!-- Jungle Log -->
+    <item id="18" damage="0" amount="1" weight="5" enabled="true"/> <!-- Oak Leaves -->
+    <item id="18" damage="1" amount="1" weight="5" enabled="true"/> <!-- Spruce Leaves -->
+    <item id="18" damage="2" amount="1" weight="5" enabled="true"/> <!-- Birch Leaves -->
+    <item id="18" damage="3" amount="1" weight="5" enabled="true"/> <!-- Jungle Leaves -->
+    <item id="19" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sponge -->
+    <item id="20" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glass -->
+    <item id="21" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lapis Ore -->
+    <item id="22" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lapis Block -->
+    <item id="23" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dispenser -->
+    <item id="24" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sandstone -->
+    <item id="24" damage="1" amount="1" weight="5" enabled="true"/> <!-- Chiselled Sandstone -->
+    <item id="24" damage="2" amount="1" weight="5" enabled="true"/> <!-- Smooth Sandstone -->
+    <item id="25" damage="0" amount="1" weight="5" enabled="true"/> <!-- Note Block -->
+    <item id="26" damage="0" amount="1" weight="0" enabled="false"/> <!-- Bed -->
+    <item id="27" damage="0" amount="1" weight="5" enabled="true"/> <!-- Powered Rail -->
+    <item id="28" damage="0" amount="1" weight="5" enabled="true"/> <!-- Detector Rail -->
+    <item id="29" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sticky Piston -->
+    <item id="30" damage="0" amount="1" weight="5" enabled="true"/> <!-- Web -->
+    <item id="31" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dead Shrub -->
+    <item id="31" damage="1" amount="1" weight="5" enabled="true"/> <!-- Grass -->
+    <item id="31" damage="2" amount="1" weight="5" enabled="true"/> <!-- Fern -->
+    <item id="32" damage="0" amount="1" weight="0" enabled="false"/> <!-- Dead Shrub -->
+    <item id="33" damage="0" amount="1" weight="5" enabled="true"/> <!-- Piston -->
+    <item id="34" damage="0" amount="1" weight="0" enabled="false"/> <!-- Piston Head -->
+    <item id="35" damage="0" amount="1" weight="5" enabled="true"/> <!-- White Wool -->
+    <item id="35" damage="1" amount="1" weight="5" enabled="true"/> <!-- Orange Wool -->
+    <item id="35" damage="2" amount="1" weight="5" enabled="true"/> <!-- Magenta Wool -->
+    <item id="35" damage="3" amount="1" weight="5" enabled="true"/> <!-- Light Blue Wool -->
+    <item id="35" damage="4" amount="1" weight="5" enabled="true"/> <!-- Yellow Wool -->
+    <item id="35" damage="5" amount="1" weight="5" enabled="true"/> <!-- Lime Wool -->
+    <item id="35" damage="6" amount="1" weight="5" enabled="true"/> <!-- Pink Wool -->
+    <item id="35" damage="7" amount="1" weight="5" enabled="true"/> <!-- Gray Wool -->
+    <item id="35" damage="8" amount="1" weight="5" enabled="true"/> <!-- Light Gray Wool -->
+    <item id="35" damage="9" amount="1" weight="5" enabled="true"/> <!-- Cyan Wool -->
+    <item id="35" damage="10" amount="1" weight="5" enabled="true"/> <!-- Purple Wool -->
+    <item id="35" damage="11" amount="1" weight="5" enabled="true"/> <!-- Blue Wool -->
+    <item id="35" damage="12" amount="1" weight="5" enabled="true"/> <!-- Brown Wool -->
+    <item id="35" damage="13" amount="1" weight="5" enabled="true"/> <!-- Green Wool -->
+    <item id="35" damage="14" amount="1" weight="5" enabled="true"/> <!-- Red Wool -->
+    <item id="35" damage="15" amount="1" weight="5" enabled="true"/> <!-- Black Wool -->
+    <item id="36" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A Piston Movement -->
+    <item id="37" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dandelion -->
+    <item id="38" damage="0" amount="1" weight="5" enabled="true"/> <!-- Rose -->
+    <item id="39" damage="0" amount="1" weight="5" enabled="true"/> <!-- Brown Mushroom -->
+    <item id="40" damage="0" amount="1" weight="5" enabled="true"/> <!-- Red Mushroom -->
+    <item id="41" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Block -->
+    <item id="42" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Block -->
+    <item id="43" damage="0" amount="1" weight="5" enabled="true"/> <!-- Double Stone Slab -->
+    <item id="43" damage="1" amount="1" weight="5" enabled="true"/> <!-- Double Sandstone Slab -->
+    <item id="43" damage="2" amount="1" weight="5" enabled="true"/> <!-- Double Wooden Slab -->
+    <item id="43" damage="3" amount="1" weight="5" enabled="true"/> <!-- Double Cobblestone Slab -->
+    <item id="43" damage="4" amount="1" weight="5" enabled="true"/> <!-- Double Brick Slab -->
+    <item id="43" damage="5" amount="1" weight="5" enabled="true"/> <!-- Double Stonebrick Slab -->
+    <item id="43" damage="6" amount="1" weight="5" enabled="true"/> <!-- Double Netherbrick Slab -->
+    <item id="43" damage="7" amount="1" weight="5" enabled="true"/> <!-- Double Quartz Slab -->
+    <item id="43" damage="8" amount="1" weight="5" enabled="true"/> <!-- Double Smooth Stone Slab -->
+    <item id="43" damage="9" amount="1" weight="5" enabled="true"/> <!-- Double Smooth Sandstone Slab -->
+    <item id="44" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Slab -->
+    <item id="44" damage="1" amount="1" weight="5" enabled="true"/> <!-- Sandstone Slab -->
+    <item id="44" damage="2" amount="1" weight="5" enabled="true"/> <!-- Wooden Slab -->
+    <item id="44" damage="3" amount="1" weight="5" enabled="true"/> <!-- Cobblestone Slab -->
+    <item id="44" damage="4" amount="1" weight="5" enabled="true"/> <!-- Brick Slab  -->
+    <item id="44" damage="5" amount="1" weight="5" enabled="true"/> <!-- Stonebrick Slab -->
+    <item id="44" damage="6" amount="1" weight="5" enabled="true"/> <!-- Netherbrick Slab -->
+    <item id="44" damage="7" amount="1" weight="5" enabled="true"/> <!-- Quartz Slab -->
+    <item id="45" damage="0" amount="1" weight="5" enabled="true"/> <!-- Brick Block -->
+    <item id="46" damage="0" amount="1" weight="0" enabled="false"/> <!-- TNT -->
+    <item id="47" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bookshelf -->
+    <item id="48" damage="0" amount="1" weight="5" enabled="true"/> <!-- Mossy Cobblestone -->
+    <item id="49" damage="0" amount="1" weight="5" enabled="true"/> <!-- Obsidian -->
+    <item id="50" damage="0" amount="1" weight="5" enabled="true"/> <!-- Torch -->
+    <item id="51" damage="0" amount="1" weight="0" enabled="false"/> <!-- Fire -->
+    <item id="52" damage="0" amount="1" weight="5" enabled="true"/> <!-- Spawner -->
+    <item id="53" damage="0" amount="1" weight="5" enabled="true"/> <!-- Oak Wood Stairs -->
+    <item id="54" damage="0" amount="1" weight="5" enabled="true"/> <!-- Chest -->
+    <item id="55" damage="0" amount="1" weight="0" enabled="false"/> <!-- Redstone Wire -->
+    <item id="56" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Ore -->
+    <item id="57" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Block -->
+    <item id="58" damage="0" amount="1" weight="5" enabled="true"/> <!-- Workbench -->
+    <item id="59" damage="0" amount="1" weight="0" enabled="false"/> <!-- Wheatcrop -->
+    <item id="60" damage="0" amount="1" weight="0" enabled="false"/> <!-- Dirt -->
+    <item id="61" damage="0" amount="1" weight="5" enabled="true"/> <!-- Furnace -->
+    <item id="62" damage="0" amount="1" weight="0" enabled="false"/> <!-- Burning Furnace -->
+    <item id="63" damage="0" amount="1" weight="0" enabled="false"/> <!-- Signpost -->
+    <item id="64" damage="0" amount="1" weight="0" enabled="false"/> <!-- Wood Door -->
+    <item id="65" damage="0" amount="1" weight="5" enabled="true"/> <!-- Ladder -->
+    <item id="66" damage="0" amount="1" weight="5" enabled="true"/> <!-- Rails -->
+    <item id="67" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cobblestone Stair -->
+    <item id="68" damage="0" amount="1" weight="0" enabled="false"/> <!-- Wall Sign -->
+    <item id="69" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lever -->
+    <item id="70" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Pressure Plate -->
+    <item id="71" damage="0" amount="1" weight="0" enabled="false"/> <!-- Iron Door -->
+    <item id="72" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Pressure Plate -->
+    <item id="73" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Ore -->
+    <item id="74" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lit Redstone Ore  -->
+    <item id="75" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Torch Off -->
+    <item id="76" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Torch On -->
+    <item id="77" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Button -->
+    <item id="78" damage="0" amount="1" weight="5" enabled="true"/> <!-- Snow -->
+    <item id="79" damage="0" amount="1" weight="5" enabled="true"/> <!-- Ice -->
+    <item id="80" damage="0" amount="1" weight="5" enabled="true"/> <!-- Snow Block -->
+    <item id="81" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cactus -->
+    <item id="82" damage="0" amount="1" weight="5" enabled="true"/> <!-- Clay Block -->
+    <item id="83" damage="0" amount="1" weight="0" enabled="false"/> <!-- Sugarcane -->
+    <item id="84" damage="0" amount="1" weight="5" enabled="true"/> <!-- Jukebox -->
+    <item id="85" damage="0" amount="1" weight="5" enabled="true"/> <!-- Fence -->
+    <item id="86" damage="0" amount="1" weight="5" enabled="true"/> <!-- Pumpkin -->
+    <item id="87" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherrack -->
+    <item id="88" damage="0" amount="1" weight="5" enabled="true"/> <!-- Soul Sand -->
+    <item id="89" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glowstone -->
+    <item id="90" damage="0" amount="1" weight="0" enabled="false"/> <!-- Portal -->
+    <item id="91" damage="0" amount="1" weight="5" enabled="true"/> <!-- Jack-o-Lantern -->
+    <item id="92" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cake Block -->
+    <item id="93" damage="0" amount="1" weight="5" enabled="true"/> <!-- Repeater Off -->
+    <item id="94" damage="0" amount="1" weight="5" enabled="true"/> <!-- Repeater On -->
+    <item id="95" damage="0" amount="1" weight="5" enabled="true"/> <!-- Locked Chest -->
+    <item id="96" damage="0" amount="1" weight="5" enabled="true"/> <!-- Trapdoor -->
+    <item id="97" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Silverfish -->
+    <item id="97" damage="1" amount="1" weight="5" enabled="true"/> <!-- Cobblestone Silverfish -->
+    <item id="97" damage="2" amount="1" weight="5" enabled="true"/> <!-- Stonebrick Silverfish -->
+    <item id="98" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stonebrick -->
+    <item id="98" damage="1" amount="1" weight="5" enabled="true"/> <!-- Mossy Stonebrick -->
+    <item id="98" damage="2" amount="1" weight="5" enabled="true"/> <!-- Cracked Stonebrick -->
+    <item id="98" damage="3" amount="1" weight="5" enabled="true"/> <!-- Chiselled Stonebrick -->
+    <item id="99" damage="0" amount="1" weight="5" enabled="true"/> <!-- Red Mushroom Cap -->
+    <item id="100" damage="0" amount="1" weight="5" enabled="true"/> <!-- Brown Mushroom Cap -->
+    <item id="101" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Bars -->
+    <item id="102" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glass Pane -->
+    <item id="103" damage="0" amount="1" weight="5" enabled="true"/> <!-- Melon Block -->
+    <item id="104" damage="0" amount="1" weight="0" enabled="false"/> <!-- Pumpkin Stem -->
+    <item id="105" damage="0" amount="1" weight="0" enabled="false"/> <!-- Melon Stem -->
+    <item id="106" damage="0" amount="1" weight="5" enabled="true"/> <!-- Vines -->
+    <item id="107" damage="0" amount="1" weight="5" enabled="true"/> <!-- Fence Gate -->
+    <item id="108" damage="0" amount="1" weight="5" enabled="true"/> <!-- Brick Stair -->
+    <item id="109" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stonebrick Stair -->
+    <item id="110" damage="0" amount="1" weight="5" enabled="true"/> <!-- Mycelium -->
+    <item id="111" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lilypad -->
+    <item id="112" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherbrick Block -->
+    <item id="113" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherbrick Fence -->
+    <item id="114" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherbrick Stair -->
+    <item id="115" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherwart -->
+    <item id="116" damage="0" amount="1" weight="5" enabled="true"/> <!-- Enchanting Table -->
+    <item id="117" damage="0" amount="1" weight="0" enabled="false"/> <!-- Brewing Stand -->
+    <item id="118" damage="0" amount="1" weight="0" enabled="false"/> <!-- Cauldron -->
+    <item id="119" damage="0" amount="1" weight="0" enabled="false"/> <!-- End Portal -->
+    <item id="120" damage="0" amount="1" weight="5" enabled="true"/> <!-- End Portal Frame -->
+    <item id="121" damage="0" amount="1" weight="5" enabled="true"/> <!-- Endstone -->
+    <item id="122" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dragon Egg -->
+    <item id="123" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Lamp Off -->
+    <item id="124" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Lamp On -->
+    <item id="125" damage="0" amount="1" weight="5" enabled="true"/> <!-- Double Oak Wood Slab -->
+    <item id="125" damage="1" amount="1" weight="5" enabled="true"/> <!-- Double Spruce Wood Slab -->
+    <item id="125" damage="2" amount="1" weight="5" enabled="true"/> <!-- Double Birch Wood Slab -->
+    <item id="125" damage="3" amount="1" weight="5" enabled="true"/> <!-- Double Jungle Wood Slab -->
+    <item id="126" damage="0" amount="1" weight="5" enabled="true"/> <!-- Oak Wood Slab -->
+    <item id="126" damage="1" amount="1" weight="5" enabled="true"/> <!-- Spruce Wood Slab -->
+    <item id="126" damage="2" amount="1" weight="5" enabled="true"/> <!-- Birch Wood Slab -->
+    <item id="126" damage="3" amount="1" weight="5" enabled="true"/> <!-- Jungle Wood Slab -->
+    <item id="127" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cocoa Plant -->
+    <item id="128" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sandstone Stair -->
+    <item id="129" damage="0" amount="1" weight="5" enabled="true"/> <!-- Emerald Ore -->
+    <item id="130" damage="0" amount="1" weight="5" enabled="true"/> <!-- Enderchest -->
+    <item id="131" damage="0" amount="1" weight="5" enabled="true"/> <!-- Tripwire Hook -->
+    <item id="132" damage="0" amount="1" weight="5" enabled="false"/> <!-- Tripwire -->
+    <item id="133" damage="0" amount="1" weight="5" enabled="true"/> <!-- Emerald Block -->
+    <item id="134" damage="0" amount="1" weight="5" enabled="true"/> <!-- Spruce Wood Stair -->
+    <item id="135" damage="0" amount="1" weight="5" enabled="true"/> <!-- Birch Wood Stair -->
+    <item id="136" damage="0" amount="1" weight="5" enabled="true"/> <!-- Jungle Wood Stair -->
+    <item id="137" damage="0" amount="1" weight="0" enabled="false"/> <!-- Command Block -->
+    <item id="138" damage="0" amount="1" weight="5" enabled="true"/> <!-- Beacon Block -->
+    <item id="139" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cobbestone Wall -->
+    <item id="139" damage="1" amount="1" weight="5" enabled="true"/> <!-- Mossy Cobblestone Wall -->
+    <item id="140" damage="0" amount="1" weight="0" enabled="false"/> <!-- Flowerpot -->
+    <item id="141" damage="0" amount="1" weight="5" enabled="true"/> <!-- CarrotsCrop -->
+    <item id="142" damage="0" amount="1" weight="5" enabled="true"/> <!-- PotatoCrop -->
+    <item id="143" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Button -->
+    <item id="144" damage="0" amount="1" weight="5" enabled="true"/> <!-- Mob Head Skele -->
+    <item id="144" damage="1" amount="1" weight="5" enabled="true"/> <!-- Mob Head Wither -->
+    <item id="144" damage="2" amount="1" weight="5" enabled="true"/> <!-- Mob Head Zombie -->
+    <item id="144" damage="3" amount="1" weight="5" enabled="true"/> <!-- Mob Head Steve -->
+    <item id="144" damage="4" amount="1" weight="5" enabled="true"/> <!-- Mob Head Creeper -->
+    <item id="145" damage="0" amount="1" weight="5" enabled="true"/> <!-- Anvil -->
+    <item id="145" damage="1" amount="1" weight="5" enabled="true"/> <!-- Anvil Slightly Damaged -->
+    <item id="145" damage="2" amount="1" weight="5" enabled="true"/> <!-- Anvil Very Damaged -->
+    <item id="146" damage="0" amount="1" weight="5" enabled="true"/> <!-- Trapped Chest -->
+    <item id="147" damage="0" amount="1" weight="5" enabled="true"/> <!-- Weighted Pressure Plate Light -->
+    <item id="148" damage="0" amount="1" weight="5" enabled="true"/> <!-- Weighted Pressure Plate Heavy -->
+    <item id="149" damage="0" amount="1" weight="5" enabled="true"/> <!-- Comparator Off -->
+    <item id="150" damage="0" amount="1" weight="5" enabled="true"/> <!-- Comparator On -->
+    <item id="151" damage="0" amount="1" weight="5" enabled="true"/> <!-- Daylight Sensor -->
+    <item id="152" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Block -->
+    <item id="153" damage="0" amount="1" weight="5" enabled="true"/> <!-- Quartz Ore -->
+    <item id="154" damage="0" amount="1" weight="5" enabled="true"/> <!-- Hopper -->
+    <item id="155" damage="0" amount="1" weight="5" enabled="true"/> <!-- Quartz Block -->
+    <item id="155" damage="1" amount="1" weight="5" enabled="true"/> <!-- Chiselled Quartz Block  -->
+    <item id="155" damage="2" amount="1" weight="5" enabled="true"/> <!-- Pillar Quartz Block -->
+    <item id="156" damage="0" amount="1" weight="5" enabled="true"/> <!-- Quartz Stair -->
+    <item id="157" damage="0" amount="1" weight="5" enabled="true"/> <!-- Activator Rail -->
+    <item id="158" damage="0" amount="1" weight="5" enabled="true"/> <!-- Dropper -->
+    <item id="159" damage="0" amount="1" weight="5" enabled="true"/> <!-- White Stained Clay -->
+    <item id="159" damage="1" amount="1" weight="5" enabled="true"/> <!-- Orange Stained Clay -->
+    <item id="159" damage="2" amount="1" weight="5" enabled="true"/> <!-- Magenta Stained Clay -->
+    <item id="159" damage="3" amount="1" weight="5" enabled="true"/> <!-- Light Blue Stained Clay -->
+    <item id="159" damage="4" amount="1" weight="5" enabled="true"/> <!-- Yellow Stained Clay -->
+    <item id="159" damage="5" amount="1" weight="5" enabled="true"/> <!-- Lime Stained Clay -->
+    <item id="159" damage="6" amount="1" weight="5" enabled="true"/> <!-- Pink Stained Clay -->
+    <item id="159" damage="7" amount="1" weight="5" enabled="true"/> <!-- Gray Stained Clay -->
+    <item id="159" damage="8" amount="1" weight="5" enabled="true"/> <!-- Light Gray Stained Clay -->
+    <item id="159" damage="9" amount="1" weight="5" enabled="true"/> <!-- Cyan Stained Clay -->
+    <item id="159" damage="10" amount="1" weight="5" enabled="true"/> <!-- Purple Stained Clay -->
+    <item id="159" damage="11" amount="1" weight="5" enabled="true"/> <!-- Blue Stained Clay -->
+    <item id="159" damage="12" amount="1" weight="5" enabled="true"/> <!-- Brown Stained Clay -->
+    <item id="159" damage="13" amount="1" weight="5" enabled="true"/> <!-- Green Stained Clay -->
+    <item id="159" damage="14" amount="1" weight="5" enabled="true"/> <!-- Red Stained Clay -->
+    <item id="159" damage="15" amount="1" weight="5" enabled="true"/> <!-- Black Stained Clay -->
+    <item id="160" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="161" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="162" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="163" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="164" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="165" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="166" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="167" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="168" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="169" damage="0" amount="1" weight="0" enabled="false"/> <!-- N/A -->
+    <item id="170" damage="0" amount="1" weight="0" enabled="false"/> <!-- Hay Bale -->
+    <item id="171" damage="0" amount="1" weight="5" enabled="true"/> <!-- White Carpet -->
+    <item id="171" damage="1" amount="1" weight="5" enabled="true"/> <!-- Orange Carpet -->
+    <item id="171" damage="2" amount="1" weight="5" enabled="true"/> <!-- Magenta Carpet -->
+    <item id="171" damage="3" amount="1" weight="5" enabled="true"/> <!-- Light Blue Carpet -->
+    <item id="171" damage="4" amount="1" weight="5" enabled="true"/> <!-- Yellow Carpet -->
+    <item id="171" damage="5" amount="1" weight="5" enabled="true"/> <!-- Lime Carpet -->
+    <item id="171" damage="6" amount="1" weight="5" enabled="true"/> <!-- Pink Carpet -->
+    <item id="171" damage="7" amount="1" weight="5" enabled="true"/> <!-- Gray Carpet -->
+    <item id="171" damage="8" amount="1" weight="5" enabled="true"/> <!-- Light Gray Carpet -->
+    <item id="171" damage="9" amount="1" weight="5" enabled="true"/> <!-- Cyan Carpet -->
+    <item id="171" damage="10" amount="1" weight="5" enabled="true"/> <!-- Purple Carpet -->
+    <item id="171" damage="11" amount="1" weight="5" enabled="true"/> <!-- Blue Carpet -->
+    <item id="171" damage="12" amount="1" weight="5" enabled="true"/> <!-- Brown Carpet -->
+    <item id="171" damage="13" amount="1" weight="5" enabled="true"/> <!-- Green Carpet -->
+    <item id="171" damage="14" amount="1" weight="5" enabled="true"/> <!-- Red Carpet -->
+    <item id="171" damage="15" amount="1" weight="5" enabled="true"/> <!-- Black Carpet -->
+    <item id="172" damage="0" amount="1" weight="5" enabled="true"/> <!-- Hardened Clay -->
+    <item id="173" damage="0" amount="1" weight="5" enabled="true"/> <!-- Block of Coal -->
+    <item id="256" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Shovel -->
+    <item id="257" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Pick -->
+    <item id="258" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Axe -->
+    <item id="259" damage="0" amount="1" weight="5" enabled="true"/> <!-- Flint and Steel -->
+    <item id="260" damage="0" amount="1" weight="5" enabled="true"/> <!-- Apple -->
+    <item id="261" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bow -->
+    <item id="262" damage="0" amount="1" weight="5" enabled="true"/> <!-- Arrow -->
+    <item id="263" damage="0" amount="1" weight="5" enabled="true"/> <!-- Coal -->
+    <item id="263" damage="1" amount="1" weight="5" enabled="true"/> <!-- Charcoal -->
+    <item id="264" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond -->
+    <item id="265" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Ingot -->
+    <item id="266" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Ingot -->
+    <item id="267" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Sword -->
+    <item id="268" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Sword -->
+    <item id="269" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Shovel -->
+    <item id="270" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Pick -->
+    <item id="271" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Axe -->
+    <item id="272" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Sword -->
+    <item id="273" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Shovel -->
+    <item id="274" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Pick -->
+    <item id="275" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Axe -->
+    <item id="276" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Sword -->
+    <item id="277" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Shovel -->
+    <item id="278" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Pick -->
+    <item id="279" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Axe -->
+    <item id="280" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stick -->
+    <item id="281" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bowl -->
+    <item id="282" damage="0" amount="1" weight="5" enabled="true"/> <!-- Mushroom Soup -->
+    <item id="283" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Sword -->
+    <item id="284" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Shovel -->
+    <item id="285" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Pick -->
+    <item id="286" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Axe -->
+    <item id="287" damage="0" amount="1" weight="5" enabled="true"/> <!-- String -->
+    <item id="288" damage="0" amount="1" weight="5" enabled="true"/> <!-- Feather -->
+    <item id="289" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gunpowder -->
+    <item id="290" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Hoe -->
+    <item id="291" damage="0" amount="1" weight="5" enabled="true"/> <!-- Stone Hoe -->
+    <item id="292" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Hoe -->
+    <item id="293" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Hoe -->
+    <item id="294" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Hoe -->
+    <item id="295" damage="0" amount="1" weight="5" enabled="true"/> <!-- Seeds -->
+    <item id="296" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wheat -->
+    <item id="297" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bread -->
+    <item id="298" damage="0" amount="1" weight="5" enabled="true"/> <!-- Leather Helmet -->
+    <item id="299" damage="0" amount="1" weight="5" enabled="true"/> <!-- Leather Chestplate -->
+    <item id="300" damage="0" amount="1" weight="5" enabled="true"/> <!-- Leather Leggings -->
+    <item id="301" damage="0" amount="1" weight="5" enabled="true"/> <!-- Leather Boots -->
+    <item id="302" damage="0" amount="1" weight="5" enabled="true"/> <!-- Chain Helmet -->
+    <item id="303" damage="0" amount="1" weight="5" enabled="true"/> <!-- Chain Chestplate -->
+    <item id="304" damage="0" amount="1" weight="5" enabled="true"/> <!-- Chain Leggings -->
+    <item id="305" damage="0" amount="1" weight="5" enabled="true"/> <!-- Chain Boots -->
+    <item id="306" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Helmet -->
+    <item id="307" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Chestplate -->
+    <item id="308" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Legginsg -->
+    <item id="309" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Boots -->
+    <item id="310" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Helmet -->
+    <item id="311" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Chestplate -->
+    <item id="312" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Leggings -->
+    <item id="313" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Boots -->
+    <item id="314" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Helmet -->
+    <item id="315" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Chestplate -->
+    <item id="316" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Leggings -->
+    <item id="317" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Boots -->
+    <item id="318" damage="0" amount="1" weight="5" enabled="true"/> <!-- Flint -->
+    <item id="319" damage="0" amount="1" weight="5" enabled="true"/> <!-- Raw Porkchop -->
+    <item id="320" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cooked Porkchop -->
+    <item id="321" damage="0" amount="1" weight="5" enabled="true"/> <!-- Painting -->
+    <item id="322" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Apple -->
+    <item id="322" damage="1" amount="1" weight="5" enabled="true"/> <!-- Enchanted Gold Apple -->
+    <item id="323" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sign -->
+    <item id="324" damage="0" amount="1" weight="5" enabled="true"/> <!-- Wood Door -->
+    <item id="325" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bucket -->
+    <item id="326" damage="0" amount="1" weight="5" enabled="true"/> <!-- Water Bucket -->
+    <item id="327" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lava Bucket -->
+    <item id="328" damage="0" amount="1" weight="5" enabled="true"/> <!-- Minecart -->
+    <item id="329" damage="0" amount="1" weight="5" enabled="true"/> <!-- Saddle -->
+    <item id="330" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Door -->
+    <item id="331" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone -->
+    <item id="332" damage="0" amount="1" weight="5" enabled="true"/> <!-- Snowball -->
+    <item id="333" damage="0" amount="1" weight="5" enabled="true"/> <!-- Boat -->
+    <item id="334" damage="0" amount="1" weight="5" enabled="true"/> <!-- Leather -->
+    <item id="335" damage="0" amount="1" weight="5" enabled="true"/> <!-- Milk Bucket -->
+    <item id="336" damage="0" amount="1" weight="5" enabled="true"/> <!-- Clay Brick -->
+    <item id="337" damage="0" amount="1" weight="5" enabled="true"/> <!-- Clayball -->
+    <item id="338" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sugarcane -->
+    <item id="339" damage="0" amount="1" weight="5" enabled="true"/> <!-- Paper -->
+    <item id="340" damage="0" amount="1" weight="5" enabled="true"/> <!-- Book -->
+    <item id="341" damage="0" amount="1" weight="5" enabled="true"/> <!-- Slimeball -->
+    <item id="342" damage="0" amount="1" weight="5" enabled="true"/> <!-- Storage Minecart -->
+    <item id="343" damage="0" amount="1" weight="5" enabled="true"/> <!-- Powered Minecart -->
+    <item id="344" damage="0" amount="1" weight="5" enabled="true"/> <!-- Egg -->
+    <item id="345" damage="0" amount="1" weight="5" enabled="true"/> <!-- Compass -->
+    <item id="346" damage="0" amount="1" weight="5" enabled="true"/> <!-- Fishing Rod -->
+    <item id="347" damage="0" amount="1" weight="5" enabled="true"/> <!-- Clock -->
+    <item id="348" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glowstone Dust -->
+    <item id="349" damage="0" amount="1" weight="5" enabled="true"/> <!-- Raw Fish -->
+    <item id="350" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cooked Fish -->
+    <item id="351" damage="0" amount="1" weight="5" enabled="true"/> <!-- Ink Sac -->
+    <item id="351" damage="1" amount="1" weight="5" enabled="true"/> <!-- Rose Red -->
+    <item id="351" damage="2" amount="1" weight="5" enabled="true"/> <!-- Cactus Green -->
+    <item id="351" damage="3" amount="1" weight="5" enabled="true"/> <!-- Cocoa Beans -->
+    <item id="351" damage="4" amount="1" weight="5" enabled="true"/> <!-- Lapis Lazuli -->
+    <item id="351" damage="5" amount="1" weight="5" enabled="true"/> <!-- Purple Dye -->
+    <item id="351" damage="6" amount="1" weight="5" enabled="true"/> <!-- Cyan Dye -->
+    <item id="351" damage="7" amount="1" weight="5" enabled="true"/> <!-- Light Gray Dye -->
+    <item id="351" damage="8" amount="1" weight="5" enabled="true"/> <!-- Gray Dye -->
+    <item id="351" damage="9" amount="1" weight="5" enabled="true"/> <!-- Pink Dye -->
+    <item id="351" damage="10" amount="1" weight="5" enabled="true"/> <!-- Lime Dye -->
+    <item id="351" damage="11" amount="1" weight="5" enabled="true"/> <!-- Dandelion Yellow -->
+    <item id="351" damage="12" amount="1" weight="5" enabled="true"/> <!-- Light Blue Dye -->
+    <item id="351" damage="13" amount="1" weight="5" enabled="true"/> <!-- Magenta Dye -->
+    <item id="351" damage="14" amount="1" weight="5" enabled="true"/> <!-- Orange Dye -->
+    <item id="351" damage="15" amount="1" weight="5" enabled="true"/> <!-- Bonemeal -->
+    <item id="352" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bone -->
+    <item id="353" damage="0" amount="1" weight="5" enabled="true"/> <!-- Sugar -->
+    <item id="354" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cake -->
+    <item id="355" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bed -->
+    <item id="356" damage="0" amount="1" weight="5" enabled="true"/> <!-- Repeater -->
+    <item id="357" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cookie -->
+    <item id="358" damage="0" amount="1" weight="5" enabled="true"/> <!-- Map -->
+    <item id="359" damage="0" amount="1" weight="5" enabled="true"/> <!-- Shears -->
+    <item id="360" damage="0" amount="1" weight="5" enabled="true"/> <!-- Melon Slice -->
+    <item id="361" damage="0" amount="1" weight="5" enabled="true"/> <!-- Pumpkin Seeds -->
+    <item id="362" damage="0" amount="1" weight="5" enabled="true"/> <!-- Melon Seeds -->
+    <item id="363" damage="0" amount="1" weight="5" enabled="true"/> <!-- Raw Beef -->
+    <item id="364" damage="0" amount="1" weight="5" enabled="true"/> <!-- Steak -->
+    <item id="365" damage="0" amount="1" weight="5" enabled="true"/> <!-- Raw Chicken -->
+    <item id="366" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cooked Chicken -->
+    <item id="367" damage="0" amount="1" weight="5" enabled="true"/> <!-- Rotten Flesh -->
+    <item id="368" damage="0" amount="1" weight="5" enabled="true"/> <!-- Ender Pearl -->
+    <item id="369" damage="0" amount="1" weight="5" enabled="true"/> <!-- Blaze Rod -->
+    <item id="370" damage="0" amount="1" weight="5" enabled="true"/> <!-- Ghast Tear -->
+    <item id="371" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Nugget -->
+    <item id="372" damage="0" amount="1" weight="5" enabled="true"/> <!-- Netherwart Seeds -->
+    <item id="373" damage="0" amount="1" weight="5" enabled="true"/> <!-- Water Bottle -->
+    <item id="373" damage="16" amount="1" weight="5" enabled="true"/> <!-- Awkward Potion -->
+    <item id="373" damage="32" amount="1" weight="5" enabled="true"/> <!-- Thick Potion -->
+    <item id="373" damage="64" amount="1" weight="5" enabled="true"/> <!-- Mundane Potion -->
+    <item id="373" damage="8193" amount="1" weight="5" enabled="true"/> <!-- Regeneration Potion 0:45 -->
+    <item id="373" damage="8194" amount="1" weight="5" enabled="true"/> <!-- Swiftness Potion 3:00 -->
+    <item id="373" damage="8195" amount="1" weight="5" enabled="true"/> <!-- Fire Resistance Potion 3:00 -->
+    <item id="373" damage="8196" amount="1" weight="5" enabled="true"/> <!-- Poison Potion 0:45 -->
+    <item id="373" damage="8197" amount="1" weight="5" enabled="true"/> <!-- Healing Potion -->
+    <item id="373" damage="8198" amount="1" weight="5" enabled="true"/> <!-- Night Vision Potion 3:00 -->
+    <item id="373" damage="8200" amount="1" weight="5" enabled="true"/> <!-- Weakness Potion 1:30 -->
+    <item id="373" damage="8201" amount="1" weight="5" enabled="true"/> <!-- Strength Potion 3:00 -->
+    <item id="373" damage="8202" amount="1" weight="5" enabled="true"/> <!-- Slowness Potion 1:30 -->
+    <item id="373" damage="8204" amount="1" weight="5" enabled="true"/> <!-- Harming Potion -->
+    <item id="373" damage="8206" amount="1" weight="5" enabled="true"/> <!-- Invisibility Potion 3:00 -->
+    <item id="373" damage="8225" amount="1" weight="5" enabled="true"/> <!-- Regeneration Potion II 0:22 -->
+    <item id="373" damage="8226" amount="1" weight="5" enabled="true"/> <!-- Swiftness Potion II 1:30 -->
+    <item id="373" damage="8228" amount="1" weight="5" enabled="true"/> <!-- Poison Potion II 0:22 -->
+    <item id="373" damage="8229" amount="1" weight="5" enabled="true"/> <!-- Healing Potion II -->
+    <item id="373" damage="8233" amount="1" weight="5" enabled="true"/> <!-- Strength Potion II 1:30 -->
+    <item id="373" damage="8236" amount="1" weight="5" enabled="true"/> <!-- Harming Potion II -->
+    <item id="373" damage="8257" amount="1" weight="5" enabled="true"/> <!-- Regeneration Potion 2:00 -->
+    <item id="373" damage="8258" amount="1" weight="5" enabled="true"/> <!-- Swiftness Potion 8:00 -->
+    <item id="373" damage="8259" amount="1" weight="5" enabled="true"/> <!-- Fire Resistance Potion 8:00 -->
+    <item id="373" damage="8260" amount="1" weight="5" enabled="true"/> <!-- Poison Potion 2:00 -->
+    <item id="373" damage="8262" amount="1" weight="5" enabled="true"/> <!-- Night Vision Potion 8:00 -->
+    <item id="373" damage="8264" amount="1" weight="5" enabled="true"/> <!-- Weakness Potion 4:00 -->
+    <item id="373" damage="8265" amount="1" weight="5" enabled="true"/> <!-- Strength Potion 8:00 -->
+    <item id="373" damage="8266" amount="1" weight="5" enabled="true"/> <!-- Slowness Potion 4:00 -->
+    <item id="373" damage="8270" amount="1" weight="5" enabled="true"/> <!-- Invisibility Potion 8:00 -->
+    <item id="373" damage="8289" amount="1" weight="5" enabled="true"/> <!-- Regeneration Potion II 1:00 -->
+    <item id="373" damage="8290" amount="1" weight="5" enabled="true"/> <!-- Swiftness Potion II 4:00 -->
+    <item id="373" damage="8292" amount="1" weight="5" enabled="true"/> <!-- Poison Potion II 1:00 -->
+    <item id="373" damage="8297" amount="1" weight="5" enabled="true"/> <!-- Strength Potion II 4:00 -->
+    <item id="373" damage="16385" amount="1" weight="5" enabled="true"/> <!-- Regeneration Splash 0:33 -->
+    <item id="373" damage="16386" amount="1" weight="5" enabled="true"/> <!-- Swiftness Splash 2:15 -->
+    <item id="373" damage="16387" amount="1" weight="5" enabled="true"/> <!-- Fire Resistance Splash 2:15 -->
+    <item id="373" damage="16388" amount="1" weight="5" enabled="true"/> <!-- Poison Splash 0:33 -->
+    <item id="373" damage="16389" amount="1" weight="5" enabled="true"/> <!-- Healing Splash -->
+    <item id="373" damage="16390" amount="1" weight="5" enabled="true"/> <!-- Night Vision Splash 2:15 -->
+    <item id="373" damage="16392" amount="1" weight="5" enabled="true"/> <!-- Weakness Splash 1:07 -->
+    <item id="373" damage="16393" amount="1" weight="5" enabled="true"/> <!-- Strength Splash 2:15 -->
+    <item id="373" damage="16394" amount="1" weight="5" enabled="true"/> <!-- Slowness Splash 1:07 -->
+    <item id="373" damage="16396" amount="1" weight="5" enabled="true"/> <!-- Harming Splash -->
+    <item id="373" damage="16398" amount="1" weight="5" enabled="true"/> <!-- Invisibility Splash 2:15 -->
+    <item id="373" damage="16417" amount="1" weight="5" enabled="true"/> <!-- Regeneration Splash II 0:16 -->
+    <item id="373" damage="16418" amount="1" weight="5" enabled="true"/> <!-- Swiftness Splash II 1:07 -->
+    <item id="373" damage="16420" amount="1" weight="5" enabled="true"/> <!-- Poison Splash II 0:16 -->
+    <item id="373" damage="16421" amount="1" weight="5" enabled="true"/> <!-- Healing Splash II -->
+    <item id="373" damage="16425" amount="1" weight="5" enabled="true"/> <!-- Strength Splash II 1:07 -->
+    <item id="373" damage="16428" amount="1" weight="5" enabled="true"/> <!-- Harming Splash II -->
+    <item id="373" damage="16449" amount="1" weight="5" enabled="true"/> <!-- Regeneration Splash 1:30 -->
+    <item id="373" damage="16450" amount="1" weight="5" enabled="true"/> <!-- Swiftness Splash 6:00 -->
+    <item id="373" damage="16451" amount="1" weight="5" enabled="true"/> <!-- Fire Resistance Splash 6:00 -->
+    <item id="373" damage="16452" amount="1" weight="5" enabled="true"/> <!-- Poison Splash 1:30 -->
+    <item id="373" damage="16454" amount="1" weight="5" enabled="true"/> <!-- Night Vision Splash (6:00) -->
+    <item id="373" damage="16456" amount="1" weight="5" enabled="true"/> <!-- Weakness Splash 3:00 -->
+    <item id="373" damage="16457" amount="1" weight="5" enabled="true"/> <!-- Strength Splash 6:00 -->
+    <item id="373" damage="16458" amount="1" weight="5" enabled="true"/> <!-- Slowness Splash 3:00 -->
+    <item id="373" damage="16462" amount="1" weight="5" enabled="true"/> <!-- Invisibility Splash 6:00 -->
+    <item id="373" damage="16481" amount="1" weight="5" enabled="true"/> <!-- Regeneration Splash II 0:45 -->
+    <item id="373" damage="16482" amount="1" weight="5" enabled="true"/> <!-- Swiftness Splash II 3:00 -->
+    <item id="373" damage="16484" amount="1" weight="5" enabled="true"/> <!-- Poison Splash II 0:45 -->
+    <item id="373" damage="16489" amount="1" weight="5" enabled="true"/> <!-- Strength Splash II 3:00 -->
+    <item id="374" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glass Bottle -->
+    <item id="375" damage="0" amount="1" weight="5" enabled="true"/> <!-- Spider Eye -->
+    <item id="376" damage="0" amount="1" weight="5" enabled="true"/> <!-- Fermented Spider Eye -->
+    <item id="377" damage="0" amount="1" weight="5" enabled="true"/> <!-- Blaze Powder -->
+    <item id="378" damage="0" amount="1" weight="5" enabled="true"/> <!-- Magma Cream -->
+    <item id="379" damage="0" amount="1" weight="5" enabled="true"/> <!-- Brewing Stand -->
+    <item id="380" damage="0" amount="1" weight="5" enabled="true"/> <!-- Cauldron -->
+    <item id="381" damage="0" amount="1" weight="5" enabled="true"/> <!-- Eye of Ender -->
+    <item id="382" damage="0" amount="1" weight="5" enabled="true"/> <!-- Glistering Melon -->
+    <item id="383" damage="50" amount="1" weight="5" enabled="true"/> <!-- Spawn Creeper -->
+    <item id="383" damage="51" amount="1" weight="5" enabled="true"/> <!-- Spawn Skeleton -->
+    <item id="383" damage="52" amount="1" weight="5" enabled="true"/> <!-- Spawn Spider -->
+    <item id="383" damage="54" amount="1" weight="5" enabled="true"/> <!-- Spawn Zombie -->
+    <item id="383" damage="55" amount="1" weight="5" enabled="true"/> <!-- Spawn Slime -->
+    <item id="383" damage="56" amount="1" weight="5" enabled="true"/> <!-- Spawn Ghast -->
+    <item id="383" damage="57" amount="1" weight="5" enabled="true"/> <!-- Spawn Pigman -->
+    <item id="383" damage="58" amount="1" weight="5" enabled="true"/> <!-- Spawn Enderman -->
+    <item id="383" damage="59" amount="1" weight="5" enabled="true"/> <!-- Spawn Cave Spider -->
+    <item id="383" damage="60" amount="1" weight="5" enabled="true"/> <!-- Spawn Silverfish -->
+    <item id="383" damage="61" amount="1" weight="5" enabled="true"/> <!-- Spawn Blaze -->
+    <item id="383" damage="62" amount="1" weight="5" enabled="true"/> <!-- Spawn Magma Cube -->
+    <item id="383" damage="65" amount="1" weight="5" enabled="true"/> <!-- Spawn Bat -->
+    <item id="383" damage="66" amount="1" weight="5" enabled="true"/> <!-- Spawn Witch -->
+    <item id="383" damage="90" amount="1" weight="5" enabled="true"/> <!-- Spawn Pig -->
+    <item id="383" damage="91" amount="1" weight="5" enabled="true"/> <!-- Spawn Sheep -->
+    <item id="383" damage="92" amount="1" weight="5" enabled="true"/> <!-- Spawn Cow -->
+    <item id="383" damage="93" amount="1" weight="5" enabled="true"/> <!-- Spawn Chicken -->
+    <item id="383" damage="94" amount="1" weight="5" enabled="true"/> <!-- Spawn Squid -->
+    <item id="383" damage="95" amount="1" weight="5" enabled="true"/> <!-- Spawn Wolf -->
+    <item id="383" damage="96" amount="1" weight="5" enabled="true"/> <!-- Spawn Mooshroom -->
+    <item id="383" damage="68" amount="1" weight="5" enabled="true"/> <!-- Spawn Ocelot -->
+    <item id="383" damage="100" amount="1" weight="5" enabled="true"/> <!-- Spawn Horse -->
+    <item id="383" damage="120" amount="1" weight="5" enabled="true"/> <!-- Spawn Villager -->
+    <item id="384" damage="0" amount="1" weight="5" enabled="true"/> <!-- Bottle o' Enchanting -->
+    <item id="385" damage="0" amount="1" weight="5" enabled="true"/> <!-- Fire Charge -->
+    <item id="386" damage="0" amount="1" weight="5" enabled="true"/> <!-- Book and Quill -->
+    <item id="387" damage="0" amount="1" weight="5" enabled="true"/> <!-- Written Book -->
+    <item id="388" damage="0" amount="1" weight="5" enabled="true"/> <!-- Emerald -->
+    <item id="389" damage="0" amount="1" weight="5" enabled="true"/> <!-- Item Frame -->
+    <item id="390" damage="0" amount="1" weight="5" enabled="true"/> <!-- Flowerpot -->
+    <item id="391" damage="0" amount="1" weight="5" enabled="true"/> <!-- Carrots -->
+    <item id="392" damage="0" amount="1" weight="5" enabled="true"/> <!-- Potato -->
+    <item id="393" damage="0" amount="1" weight="5" enabled="true"/> <!-- Baked Potato -->
+    <item id="394" damage="0" amount="1" weight="5" enabled="true"/> <!-- Poison Potato -->
+    <item id="395" damage="0" amount="1" weight="5" enabled="true"/> <!-- Map -->
+    <item id="396" damage="0" amount="1" weight="5" enabled="true"/> <!-- Golden Carrot -->
+    <item id="397" damage="0" amount="1" weight="5" enabled="true"/> <!-- Head Skeleton -->
+    <item id="397" damage="1" amount="1" weight="5" enabled="true"/> <!-- Head Wither -->
+    <item id="397" damage="2" amount="1" weight="5" enabled="true"/> <!-- Head Zombie -->
+    <item id="397" damage="3" amount="1" weight="5" enabled="true"/> <!-- Head Steve -->
+    <item id="397" damage="4" amount="1" weight="5" enabled="true"/> <!-- Head Creeper -->
+    <item id="398" damage="0" amount="1" weight="5" enabled="true"/> <!-- Carrot on a Stick -->
+    <item id="399" damage="0" amount="1" weight="5" enabled="true"/> <!-- Nether Star -->
+    <item id="400" damage="0" amount="1" weight="5" enabled="true"/> <!-- Pumpkin Pie -->
+    <item id="401" damage="0" amount="1" weight="5" enabled="true"/> <!-- Firework Rocket -->
+    <item id="402" damage="0" amount="1" weight="5" enabled="true"/> <!-- Firework Star -->
+    <item id="403" damage="0" amount="1" weight="5" enabled="true"/> <!-- Enchanted Book -->
+    <item id="404" damage="0" amount="1" weight="5" enabled="true"/> <!-- Redstone Comparator -->
+    <item id="405" damage="0" amount="1" weight="5" enabled="true"/> <!-- Nether Brick -->
+    <item id="406" damage="0" amount="1" weight="5" enabled="true"/> <!-- Nether Quartz -->
+    <item id="407" damage="0" amount="1" weight="5" enabled="true"/> <!-- TNT Minecart -->
+    <item id="408" damage="0" amount="1" weight="5" enabled="true"/> <!-- Hopper Minecart -->
+    <item id="417" damage="0" amount="1" weight="5" enabled="true"/> <!-- Iron Horse Armour -->
+    <item id="418" damage="0" amount="1" weight="5" enabled="true"/> <!-- Gold Horse Armour -->
+    <item id="419" damage="0" amount="1" weight="5" enabled="true"/> <!-- Diamond Horse Armour -->
+    <item id="420" damage="0" amount="1" weight="5" enabled="true"/> <!-- Lead -->
+    <item id="421" damage="0" amount="1" weight="5" enabled="true"/> <!-- Nametag -->
+    <item id="2256" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk 13 -->
+    <item id="2257" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Cat -->
+    <item id="2258" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Blocks -->
+    <item id="2259" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Chirp -->
+    <item id="2260" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Far -->
+    <item id="2261" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Mall -->
+    <item id="2262" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Mellohi -->
+    <item id="2263" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Stal -->
+    <item id="2264" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Strad -->
+    <item id="2265" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Ward -->
+    <item id="2266" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk 11 -->
+    <item id="2267" damage="0" amount="1" weight="5" enabled="true"/> <!-- Disk Wait -->
 </items>
