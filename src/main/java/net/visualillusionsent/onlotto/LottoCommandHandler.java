@@ -25,7 +25,7 @@ import net.canarymod.commandsys.CommandDependencyException;
 import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPluginInformationCommand;
 import net.visualillusionsent.utils.VersionChecker;
 
-public class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationCommand {
+public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationCommand {
     private final OnLotto onlotto;
 
     public LottoCommandHandler(OnLotto onlotto) throws CommandDependencyException {
@@ -34,9 +34,9 @@ public class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationC
         this.onlotto = onlotto;
     }
 
-    @Command(aliases = {"onlotto"},
+    @Command(aliases = { "onlotto" },
             description = "Information Command",
-            permissions = {""},
+            permissions = { "" },
             toolTip = "/onlotto")
     public final void lottobase(MessageReceiver msgrec, String[] args) {
         for (String msg : about) {
@@ -45,12 +45,15 @@ public class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationC
                 Boolean isLatest = vc.isLatest();
                 if (isLatest == null) {
                     msgrec.message(center(Colors.GRAY + "VersionCheckerError: " + vc.getErrorMessage()));
-                } else if (!vc.isLatest()) {
+                }
+                else if (!vc.isLatest()) {
                     msgrec.message(center(Colors.GRAY + vc.getUpdateAvailibleMessage()));
-                } else {
+                }
+                else {
                     msgrec.message(center(Colors.LIGHT_GREEN + "Latest Version Installed"));
                 }
-            } else {
+            }
+            else {
                 msgrec.message(msg);
             }
         }
@@ -63,27 +66,27 @@ public class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationC
         }
     }
 
-    @Command(aliases = {"time"},
+    @Command(aliases = { "time" },
             description = "Returns time till draw",
-            permissions = {"onlotto.time"},
+            permissions = { "onlotto.time" },
             toolTip = "/onlotto time",
             parent = "onlotto")
     public final void lottoTime(MessageReceiver msgrec, String[] args) {
         msgrec.message(onlotto.timeUntil());
     }
 
-    @Command(aliases = {"broadcast"},
+    @Command(aliases = { "broadcast" },
             description = "Broadcasts time till draw",
-            permissions = {"onlotto.broadcast"},
+            permissions = { "onlotto.broadcast" },
             toolTip = "/onlotto broadcast",
             parent = "onlotto")
     public final void lottoBroadcast(MessageReceiver msgrec, String[] args) {
         Canary.getServer().broadcastMessage(onlotto.timeUntil());
     }
 
-    @Command(aliases = {"draw"},
+    @Command(aliases = { "draw" },
             description = "Force draws the lotto",
-            permissions = {"onlotto.draw"},
+            permissions = { "onlotto.draw" },
             toolTip = "/onlotto broadcast",
             parent = "onlotto")
     public final void lottodraw(MessageReceiver msgrec, String[] args) {

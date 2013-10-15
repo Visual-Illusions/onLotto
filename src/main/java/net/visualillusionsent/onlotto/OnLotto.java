@@ -42,7 +42,8 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
             lottoTimer = new Timer();
             lottoTimer.scheduleAtFixedRate(new LottoTask(this), getStartTime(), getDelayTime());
             new LottoCommandHandler(this);
-        } catch (Exception ex) {
+        }
+        catch (Exception ex) {
             getLogman().logStacktrace("Failed to enable onLotto...", ex);
             if (lottoTimer != null) {
                 lottoTimer.cancel();
@@ -101,21 +102,21 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
         lottoProps.setComments("everyone.wins", "Set to true to give all online users a random item (minus those in disabled groups)");
         lottoProps.getInt("max.winners", 1);
         lottoProps.setComments("max.winners", "The number of winners to choose unless everyone.wins is set");
-        lottoProps.getStringArray("disabled.groups", new String[]{"admins", "mods", "visitors"});
+        lottoProps.getStringArray("disabled.groups", new String[]{ "admins", "mods", "visitors" });
         lottoProps.setComments("disabled.groups", "The names of the groups to not allow winning. No parent checking is done so every group needs to be directly specified. Seperate names with commas");
         lottoProps.getLong("draw.delay", 1L);
         lottoProps.setComments("draw.delay", "The time in minutes between drawings");
         lottoProps.getLong("timer.started", 0L);
-        lottoProps.setComments("timer.started", "* DO NOT EDIT THIS PROPERTY * (Resets the timer between restars)");
+        lottoProps.setComments("timer.started", "* DO NOT EDIT THIS PROPERTY * (Resets the timer between restarts)");
         lottoProps.save();
     }
 
-    public long getStartTime() {
+    public final long getStartTime() {
         long time = ToolBox.getUnixTimestamp() - lottoProps.getLong("timer.started");
         return time < 60L ? 60000L : time > getDelayTime() ? getDelayTime() * 1000 : time * 1000;
     }
 
-    public long getDelayTime() {
+    public final long getDelayTime() {
         long time = lottoProps.getLong("draw.delay") * 60000;
         return time < 60000L ? 60000L : time;
     }

@@ -29,11 +29,11 @@ public final class WeightedItem {
         this.weight = weight;
     }
 
-    public double getWeight() {
+    public final double getWeight() {
         return weight;
     }
 
-    public Item getItem() {
+    public final Item getItem() {
         return item.clone();
     }
 }
