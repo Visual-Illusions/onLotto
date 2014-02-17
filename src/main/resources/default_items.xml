@@ -1,3 +1,8 @@
+<!--
+onLotto Items configuration
+Copyright © {copyright.years} Visual Illusions Entertainment
+Licensed under the {gpl.type}
+-->
 <items>
     <!--
     Weight is an decimal that defines the "weight" an Item to influence which Item is chosen.

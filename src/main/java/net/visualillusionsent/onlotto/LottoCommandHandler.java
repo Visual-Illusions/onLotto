@@ -18,12 +18,11 @@
 package net.visualillusionsent.onlotto;
 
 import net.canarymod.Canary;
-import net.canarymod.chat.Colors;
 import net.canarymod.chat.MessageReceiver;
 import net.canarymod.commandsys.Command;
 import net.canarymod.commandsys.CommandDependencyException;
+import net.visualillusionsent.minecraft.plugin.ModMessageReceiver;
 import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPluginInformationCommand;
-import net.visualillusionsent.utils.VersionChecker;
 
 public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInformationCommand {
     private final OnLotto onlotto;
@@ -39,33 +38,19 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
             permissions = { "" },
             toolTip = "/onlotto")
     public final void lottobase(MessageReceiver msgrec, String[] args) {
-        for (String msg : about) {
-            if (msg.equals("$VERSION_CHECK$")) {
-                VersionChecker vc = plugin.getVersionChecker();
-                Boolean isLatest = vc.isLatest();
-                if (isLatest == null) {
-                    msgrec.message(center(Colors.GRAY + "VersionCheckerError: " + vc.getErrorMessage()));
-                }
-                else if (!vc.isLatest()) {
-                    msgrec.message(center(Colors.GRAY + vc.getUpdateAvailibleMessage()));
-                }
-                else {
-                    msgrec.message(center(Colors.LIGHT_GREEN + "Latest Version Installed"));
-                }
-            }
-            else {
-                msgrec.message(msg);
-            }
-        }
-
-        //-- Help --
-        msgrec.message("§2/onLotto time §6- displays time till drawing");
-        if (msgrec.hasPermission("onlotto.broadcast")) {
-            msgrec.message("§2/onlotto broadcast §6- broadcast time till drawing");
-            msgrec.message("§2/onlotto draw §6- draws lotto immediately");
-        }
+        super.sendInformation(msgrec);
     }
 
+    @Override
+    protected void messageInject(ModMessageReceiver mmr) {
+        //-- Help --
+        mmr.message("§2/onLotto time §6- displays time till drawing");
+        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.broadcast")) {
+            mmr.message("§2/onlotto broadcast §6- broadcast time till drawing");
+            mmr.message("§2/onlotto draw §6- draws lotto immediately");
+        }
+    }
+    
     @Command(aliases = { "time" },
             description = "Returns time till draw",
             permissions = { "onlotto.time" },

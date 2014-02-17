@@ -52,12 +52,14 @@ final class ItemLoader {
                     double weight = item.getAttribute("weight").getDoubleValue();
                     if (ItemType.fromId(id) != null) {
                         item_list.add(new WeightedItem(Canary.factory().getItemFactory().newItem(id, damage, amount), weight));
-                    } else {
-                        onlotto.getLogman().logWarning("Tried to load a non-existent item: ID=" + id);
+                    }
+                    else {
+                        onlotto.getLogman().warn("Tried to load a non-existent item: ID=" + id);
                     }
                 }
-            } catch (DataConversionException dcex) {
-                onlotto.getLogman().logStacktrace("Failed to load an Item...", dcex);
+            }
+            catch (DataConversionException dcex) {
+                onlotto.getLogman().error("Failed to load an Item...", dcex);
                 continue;
             }
         }

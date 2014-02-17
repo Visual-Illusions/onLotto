@@ -34,9 +34,8 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
 
     @Override
     public final boolean enable() {
+        super.enable();
         try {
-            checkStatus();
-            checkVersion();
             loadProps();
             items = new ItemLoader().load(this);
             lottoTimer = new Timer();
@@ -44,7 +43,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
             new LottoCommandHandler(this);
         }
         catch (Exception ex) {
-            getLogman().logStacktrace("Failed to enable onLotto...", ex);
+            getLogman().error("Failed to enable onLotto...", ex);
             if (lottoTimer != null) {
                 lottoTimer.cancel();
             }
@@ -59,7 +58,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
     }
 
     final boolean everyoneWins() {
-        return true;
+        return true; // TODO
     }
 
     final void setStart(long time) {
@@ -96,7 +95,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
         lottoTimer.scheduleAtFixedRate(new LottoTask(this), getStartTime(), getDelayTime());
     }
 
-    private final void loadProps() {
+    private void loadProps() {
         lottoProps = new PropertiesFile("config/onLotto/onLotto.cfg");
         lottoProps.getBoolean("everyone.wins", true);
         lottoProps.setComments("everyone.wins", "Set to true to give all online users a random item (minus those in disabled groups)");
