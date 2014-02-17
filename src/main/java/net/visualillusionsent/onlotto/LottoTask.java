@@ -1,18 +1,18 @@
 /*
  * This file is part of onLotto.
  *
- * Copyright © 2011-2013 Visual Illusions Entertainment
+ * Copyright © 2011-2014 Visual Illusions Entertainment
  *
  * onLotto is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
- * onLotto is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License along with onLotto.
+ * You should have received a copy of the GNU General Public License along with this program.
  * If not, see http://www.gnu.org/licenses/gpl.html.
  */
 package net.visualillusionsent.onlotto;
@@ -21,7 +21,6 @@ import net.canarymod.Canary;
 import net.canarymod.ToolBox;
 import net.canarymod.api.entity.living.humanoid.Player;
 import net.canarymod.api.inventory.Item;
-import net.canarymod.api.inventory.ItemType;
 import net.canarymod.chat.TextFormat;
 
 import java.util.ArrayList;
@@ -45,7 +44,7 @@ public final class LottoTask extends TimerTask {
     @Override
     public final void run() {
         if (Canary.getServer().getNumPlayersOnline() == 0) {
-            onlotto.getLogman().logInfo("No one online to win...");
+            onlotto.getLogman().info("No one online to win...");
             return;
         }
         if (onlotto.everyoneWins()) {
@@ -53,13 +52,13 @@ public final class LottoTask extends TimerTask {
             for (Player player : Canary.getServer().getPlayerList()) {
                 if (onlotto.canPlayerWin(player)) {
                     Item winning = getRandomItem();
-                    player.message(String.format("%sYou have won %s%d %sof%s %s", TextFormat.GREEN, TextFormat.TURQUIOSE, winning.getAmount(), TextFormat.GREEN, TextFormat.CYAN, winning.getType().getDisplayName()));
+                    player.message(String.format("%sYou have won %s%d %sof%s %s", TextFormat.GREEN, TextFormat.TURQUIOSE, winning.getAmount(), TextFormat.GREEN, TextFormat.CYAN, winning.getDisplayName()));
                     player.dropItem(winning);
-                    winners.add(player.getName() + ":" + winning.getType().getDisplayName() + "{" + winning.getAmount() + "}");
+                    winners.add(player.getName() + ":" + winning.getDisplayName() + "{" + winning.getAmount() + "}");
                 }
             }
             Canary.getServer().broadcastMessage(String.format("%sLottery Drawn!%s %d %sPlayers have won items!", TextFormat.GREEN, TextFormat.TURQUIOSE, winners.size(), TextFormat.GREEN));
-            onlotto.getLogman().logInfo(String.format("Lottery Drawn! %s", winners.toString()));
+            onlotto.getLogman().info(String.format("Lottery Drawn! %s", winners.toString()));
             onlotto.setStart(ToolBox.getUnixTimestamp());
             Canary.getServer().broadcastMessage(onlotto.timeUntil());
         }
@@ -90,13 +89,13 @@ public final class LottoTask extends TimerTask {
                 int randwin = randGen.nextInt(players.size());
                 Player player = players.get(randwin);
                 Item winning = getRandomItem();
-                player.message(String.format("%sYou have won %s%d %sof%s %s", TextFormat.GREEN, TextFormat.TURQUIOSE, winning.getAmount(), TextFormat.GREEN, TextFormat.CYAN, ItemType.fromId(winning.getId()).getDisplayName()));
+                player.message(String.format("%sYou have won %s%d %sof%s %s", TextFormat.GREEN, TextFormat.TURQUIOSE, winning.getAmount(), TextFormat.GREEN, TextFormat.CYAN, winning.getDisplayName()));
                 player.dropItem(winning);
                 players.remove(player);
-                winners.add(player.getName() + ":" + winning.getType().getDisplayName() + "{" + winning.getAmount() + "}");
+                winners.add(player.getName() + ":" + winning.getDisplayName() + "{" + winning.getAmount() + "}");
             }
             Canary.getServer().broadcastMessage(String.format("%sLottery Drawn!%s %d %sPlayers have won items!", TextFormat.GREEN, TextFormat.TURQUIOSE, winners.size(), TextFormat.GREEN));
-            onlotto.getLogman().logInfo(String.format("Lottery Drawn! %s", winners.toString()));
+            onlotto.getLogman().info(String.format("Lottery Drawn! %s", winners.toString()));
             onlotto.setStart(ToolBox.getUnixTimestamp());
             Canary.getServer().broadcastMessage(onlotto.timeUntil());
         }
