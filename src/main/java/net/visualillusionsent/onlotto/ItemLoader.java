@@ -34,7 +34,7 @@ final class ItemLoader {
     private final SAXBuilder builder = new SAXBuilder();
     private final String item_path = "config/onLotto/lotto_items.xml";
 
-    final List<WeightedItem> load(OnLotto onlotto) throws Exception {
+    final WeightedItem[] load(OnLotto onlotto) throws Exception {
         File itemFile = new File(item_path);
         if (!itemFile.exists()) {
             FileUtils.cloneFileFromJar(onlotto.getJarPath(), "default_items.xml", "config/onLotto/lotto_items.xml");
@@ -61,6 +61,6 @@ final class ItemLoader {
                 continue;
             }
         }
-        return item_list;
+        return item_list.toArray(new WeightedItem[item_list.size()]);
     }
 }

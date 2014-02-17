@@ -38,7 +38,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
             checkStatus();
             checkVersion();
             loadProps();
-            items = new ItemLoader().load(this).toArray(new WeightedItem[0]);
+            items = new ItemLoader().load(this);
             lottoTimer = new Timer();
             lottoTimer.scheduleAtFixedRate(new LottoTask(this), getStartTime(), getDelayTime());
             new LottoCommandHandler(this);
