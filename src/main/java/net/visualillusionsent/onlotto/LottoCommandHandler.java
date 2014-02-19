@@ -40,7 +40,8 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
             aliases = { "onlotto" },
             description = "Information Command",
             permissions = { "" },
-            toolTip = "/onlotto"
+            toolTip = "/onlotto",
+            tabCompleteMethod = "lottoTabComplete"
     )
     public final void lottobase(MessageReceiver msgrec, String[] args) {
         super.sendInformation(msgrec);
@@ -49,19 +50,20 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
     @Override
     protected void messageInject(ModMessageReceiver mmr) {
         //-- Help --
-        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.time")) {
+        MessageReceiver receiver = mmr.unwrap();
+        if (receiver.hasPermission("onlotto.time")) {
             mmr.message("§2/onLotto time §6- displays time till drawing");
         }
-        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.broadcast")) {
+        if (receiver.hasPermission("onlotto.broadcast")) {
             mmr.message("§2/onlotto broadcast §6- broadcast time till drawing");
         }
-        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.draw")) {
+        if (receiver.hasPermission("onlotto.draw")) {
             mmr.message("§2/onlotto draw §6- draws lotto immediately");
         }
-        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.reload")) {
+        if (receiver.hasPermission("onlotto.reload")) {
             mmr.message("§2/onlotto reload §6- reloads onLotto configuration and items");
         }
-        if (((MessageReceiver) mmr.unwrap()).hasPermission("onlotto.debug")) {
+        if (receiver.hasPermission("onlotto.debug")) {
             mmr.message("§2/onlotto debug <item#> §6- Give the specified Item index for debugging purposes");
         }
     }
