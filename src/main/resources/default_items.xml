@@ -2809,7 +2809,7 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         </nbt>
     </item>
     <item>
-        <!-- Goron Tunic -->
+        <!-- Goron Tunic 333-->
         <name>minecraft:leather_chestplate</name>
         <enabled>yes</enabled>
         <data>0</data>
@@ -4534,7 +4534,9 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <data>3</data>
         <amount>1</amount>
         <weight>5.0</weight>
-        <lore>Owner and Founder of Visual Illusions Entertainment</lore>
+        <lore>
+            Owner and Founder of Visual Illusions Entertainment
+        </lore>
         <nbt>
             <SkullOwner type="String">darkdiplomat</SkullOwner>
         </nbt>
@@ -4546,7 +4548,9 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <data>3</data>
         <amount>1</amount>
         <weight>5.0</weight>
-        <lore>Visual Illusion Java Developer</lore>
+        <lore>
+            Visual Illusion Java Developer
+        </lore>
         <nbt>
             <SkullOwner type="String">xsomnersx</SkullOwner>
         </nbt>
@@ -4558,7 +4562,9 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <data>3</data>
         <amount>1</amount>
         <weight>5.0</weight>
-        <lore>Visual Illusion Java Developer</lore>
+        <lore>
+            Visual Illusion Java Developer
+        </lore>
         <nbt>
             <SkullOwner type="String">TheLolzKing</SkullOwner>
         </nbt>
@@ -4570,7 +4576,10 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <data>3</data>
         <amount>1</amount>
         <weight>5.0</weight>
-        <lore>Close friend of darkdiplomat\nSome people believe that they are the same people.</lore>
+        <lore>
+            Close friend of darkdiplomat
+            Some people believe that they are the same people.
+        </lore>
         <nbt>
             <SkullOwner type="String">damagefilter</SkullOwner>
         </nbt>

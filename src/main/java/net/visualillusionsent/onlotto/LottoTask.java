@@ -104,7 +104,7 @@ public final class LottoTask extends TimerTask {
     }
 
     private Item getRandomItem() {
-        List<WeightedItem> items = Arrays.asList(onlotto.getItems());
+        List<WeightedItem> items = Arrays.asList(onlotto.getItems().clone()); // Clone the array so that we can keep the indexes right for debugging
         Collections.shuffle(items); // Shuffle up the list so the first few items will get a chance at selection too
         // Compute the total weight of all items together
         double totalWeight = 0.0d;
