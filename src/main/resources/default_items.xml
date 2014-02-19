@@ -4437,18 +4437,18 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
                 <!-- Note the whitespace here, it is necessary and should not be removed -->
                 <page type="STRING">
                     Minecraft has a secret. This is normal, everything and everyone has secrets, but we're not interested in those. We're interested in the Minecraft secret.
-
-                    It is said by those who know that this secret has changed the way that they will forever
+                    
+It is said by those who know that this secret has changed the way that they will forever
                 </page>
                 <page type="STRING">
                     view Minecraft. It is claimed that those who discover this secret are driven into deep regret, flooded with a want, a need to forget that they ever found out.
-
-                    Only the foolish and the brave, though it could be argued these are one and the same,
+                    
+Only the foolish and the brave, though it could be argued these are one and the same,    
                 </page>
                 <page type="STRING">
                     would dare to try and purposefully find the secret behind Minecraft.
-
-                    Heed these warnings, turning the pages any further than this will teach you something you cannot forget. Do not think this risk trivial.
+                    
+Heed these warnings, turning the pages any further than this will teach you something you cannot forget. Do not think this risk trivial.
                 </page>
                 <page type="STRING"/>
                 <page type="STRING"/>
@@ -4459,7 +4459,7 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
                 <page type="STRING">
                     This is your last warning.
 
-                    Do not turn the page.
+Do not turn the page.
                 </page>
                 <page type="STRING"/>
                 <page type="STRING"/>
