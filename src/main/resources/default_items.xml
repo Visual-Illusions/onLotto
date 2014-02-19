@@ -11,8 +11,12 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
   * <data>0</data> <- The data (damage) value
   * <amount>1</amount> <- The amount to give the winners
   * <weight>5.0</weight> <- Weight is an decimal that defines the "weight" an Item to influence which Item is chosen.
-    <displayName>SuperStone</displayName> <- No More than 16 Characters
-    <lore>This stone\ngiven by\nonLotto</lore> <- Each line separated with \n
+    <displayName>SuperStone</displayName> <- No More than 40 Characters should be used
+    <lore>
+        This stone
+        given by
+        onLotto
+    </lore>
     <enchantments>
         <enchantment>
             <id>0</id>
@@ -2770,7 +2774,11 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <amount>1</amount>
         <weight>5.0</weight>
         <displayName>Kokiri Tunic</displayName>
-        <lore>It is the traditional clothing of the Kokiri.\nThe Kokiri Tunic does not possess any special abilities.</lore>
+        <lore>
+            It is the traditional clothing of the Kokiri.
+            The Kokiri Tunic does not possess any
+            special abilities.
+        </lore>
         <nbt>
             <display type="COMPOUND">
                 <color type="INT">1151498</color>
@@ -2785,7 +2793,13 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <amount>1</amount>
         <weight>5.0</weight>
         <displayName>Zora Tunic</displayName>
-        <lore>The Zora Tunic is a tunic that allows Link to breathe underwater in The Legend of Zelda: Ocarina of Time.\nHowever, You are not Link and this is not Ocarina of Time,
+        <lore>
+            The Zora Tunic is a tunic that allows
+            Link to breathe underwater in
+            The Legend of Zelda:
+            Ocarina of Time.
+            However, You are not Link
+            and this is not Ocarina of Time,
             so you will drown.
         </lore>
         <nbt>
@@ -2802,8 +2816,14 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <amount>1</amount>
         <weight>5.0</weight>
         <displayName>Goron Tunic</displayName>
-        <lore>The Goron Tunic allows Link to survive in very hot areas through unexplained means, though it is made clear that it is, at least to a degree, fireproof.\nHowever, You
-            are not Link, so you will burn to a crisp.
+        <lore>
+            The Goron Tunic allows Link to survive
+            in very hot areas through unexplained means,
+            though it is made clear that it is,
+            at least to a degree,
+            fireproof.
+            However, You are not Link,
+            so you will burn to a crisp.
         </lore>
         <nbt>
             <display type="COMPOUND">

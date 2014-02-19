@@ -17,9 +17,11 @@
  */
 package net.visualillusionsent.onlotto;
 
+import net.canarymod.Canary;
 import net.canarymod.ToolBox;
 import net.canarymod.api.entity.living.humanoid.Player;
 import net.canarymod.chat.TextFormat;
+import net.canarymod.tasks.ServerTask;
 import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPlugin;
 import net.visualillusionsent.utils.PropertiesFile;
 
@@ -55,6 +57,26 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
     @Override
     public final void disable() {
         lottoTimer.cancel();
+    }
+
+    final boolean reload() {
+        try {
+            lottoTimer.cancel();
+            lottoProps.reload();
+            items = new ItemLoader().load(this);
+            restartTimer();
+        }
+        catch (Exception ex) {
+            getLogman().error("Failed to reload onLotto...", ex);
+            Canary.getServer().addSynchronousTask(new ServerTask(this, 1) {
+                @Override
+                public void run() {
+                    Canary.loader().disablePlugin(OnLotto.this.getName());
+                }
+            });
+            return false;
+        }
+        return true;
     }
 
     final boolean everyoneWins() {

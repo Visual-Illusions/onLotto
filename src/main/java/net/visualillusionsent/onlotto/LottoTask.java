@@ -90,7 +90,9 @@ public final class LottoTask extends TimerTask {
                 Player player = players.get(randwin);
                 Item winning = getRandomItem();
                 player.message(String.format("%sYou have won %s%d %sof%s %s", TextFormat.GREEN, TextFormat.TURQUIOSE, winning.getAmount(), TextFormat.GREEN, TextFormat.CYAN, winning.getDisplayName()));
-                player.dropItem(winning);
+                if (!player.getInventory().insertItem(winning)) {
+                    player.dropItem(winning);
+                }
                 players.remove(player);
                 winners.add(player.getName() + ":" + winning.getDisplayName() + "{" + winning.getAmount() + "}");
             }

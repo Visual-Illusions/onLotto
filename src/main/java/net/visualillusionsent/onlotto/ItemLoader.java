@@ -54,9 +54,9 @@ final class ItemLoader {
             try {
                 if (BooleanUtils.parseBoolean(item.getChild("enabled").getValue())) {
                     String machineName = item.getChildText("name");
-                    int data = Integer.valueOf(item.getChildText("data"));
-                    int amount = Integer.valueOf(item.getChildText("amount"));
-                    double weight = Double.valueOf(item.getChildText("weight"));
+                    int data = Integer.valueOf(item.getChildText("data").trim());
+                    int amount = Integer.valueOf(item.getChildText("amount").trim());
+                    double weight = Double.valueOf(item.getChildText("weight").trim());
                     String displayName = testAndParseDisp(item.getChildText("displayName"));
                     String[] lore = testAndParseLore(item.getChildText("lore"));
                     ItemType type = ItemType.fromStringAndData(machineName, data);
@@ -66,7 +66,7 @@ final class ItemLoader {
                             temp.setDisplayName(displayName);
                         }
                         if (lore != null) {
-                            temp.setLore(lore);
+                            temp.setLore(StringUtils.trimElements(lore));
                         }
                         if (item.getChild("nbt") != null) {
                             testparseapplyNBT(item.getChild("nbt"), temp);
@@ -87,17 +87,26 @@ final class ItemLoader {
     }
 
     private String[] testAndParseLore(String element) {
-        String[] temp = element == null || element.isEmpty() ? null : element.split("\\n");
-        return temp == null || temp.length == 0 ? null : temp;
+        if (element == null) {
+            return null;
+        }
+        element = element.trim();
+        return element.trim().isEmpty() ? null : element.split("[\r|\n|\r\n]");
     }
 
     private String testAndParseDisp(String element) {
-        return element == null || element.isEmpty() ? null : element;
+        if (element == null) {
+            return null;
+        }
+        element = element.trim();
+        return element.isEmpty() ? null : element;
     }
 
     private void testparseapplyNBT(Element main, Item temp) {
         NBTFactory factory = Canary.factory().getNBTFactory();
-        temp.setDataTag(factory.newCompoundTag("tag")); // Need a datatag
+        if (!temp.hasDataTag()) {
+            temp.setDataTag(factory.newCompoundTag("tag")); // Need a datatag
+        }
         for (Element toSet : main.getChildren()) {
             // Let it throw the error and stop the loading of the item
             NBTTagType setType = NBTTagType.valueOf(toSet.getAttributeValue("type").toUpperCase());
@@ -107,7 +116,7 @@ final class ItemLoader {
                 recursiveList(toSet, working);
             }
             else if (setType == NBTTagType.COMPOUND) {
-                CompoundTag workingTag = factory.newCompoundTag(toSet.getName());
+                CompoundTag workingTag = temp.getDataTag().containsKey(toSet.getName()) ? temp.getDataTag().getCompoundTag(toSet.getName()) : factory.newCompoundTag(toSet.getName());
                 temp.getDataTag().put(toSet.getName(), workingTag);
                 recursiveCompund(workingTag, toSet);
             }
@@ -122,7 +131,7 @@ final class ItemLoader {
         for (Element subElement : workElement.getChildren()) {
             NBTTagType workingType = NBTTagType.valueOf(subElement.getAttributeValue("type").toUpperCase());
             if (workingType == NBTTagType.COMPOUND) {
-                CompoundTag workingTag = factory.newCompoundTag(subElement.getName());
+                CompoundTag workingTag = workTag.containsKey(subElement.getName()) ? workTag.getCompoundTag(subElement.getName()) : factory.newCompoundTag(subElement.getName());
                 workTag.put(subElement.getName(), workingTag);
                 recursiveCompund(workingTag, subElement);
             }
@@ -159,6 +168,7 @@ final class ItemLoader {
 
     private BaseTag getForType(NBTTagType type, String value) {
         NBTFactory factory = Canary.factory().getNBTFactory();
+        value = value.trim();
         switch (type) {
             case BYTE:
                 return factory.newByteTag(Byte.valueOf(value));
