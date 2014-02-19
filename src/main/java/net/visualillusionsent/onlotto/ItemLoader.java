@@ -18,9 +18,16 @@
 package net.visualillusionsent.onlotto;
 
 import net.canarymod.Canary;
+import net.canarymod.api.factory.NBTFactory;
+import net.canarymod.api.inventory.Item;
 import net.canarymod.api.inventory.ItemType;
+import net.canarymod.api.nbt.BaseTag;
+import net.canarymod.api.nbt.CompoundTag;
+import net.canarymod.api.nbt.ListTag;
+import net.canarymod.api.nbt.NBTTagType;
+import net.visualillusionsent.utils.BooleanUtils;
 import net.visualillusionsent.utils.FileUtils;
-import org.jdom2.DataConversionException;
+import net.visualillusionsent.utils.StringUtils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
@@ -45,24 +52,134 @@ final class ItemLoader {
         List<Element> items = root.getChildren();
         for (Element item : items) {
             try {
-                if (item.getAttribute("enabled").getBooleanValue()) {
-                    int id = item.getAttribute("id").getIntValue();
-                    int damage = item.getAttribute("damage").getIntValue();
-                    int amount = item.getAttribute("amount").getIntValue();
-                    double weight = item.getAttribute("weight").getDoubleValue();
-                    if (ItemType.fromId(id) != null) {
-                        item_list.add(new WeightedItem(Canary.factory().getItemFactory().newItem(id, damage, amount), weight));
+                if (BooleanUtils.parseBoolean(item.getChild("enabled").getValue())) {
+                    String machineName = item.getChildText("name");
+                    int data = Integer.valueOf(item.getChildText("data"));
+                    int amount = Integer.valueOf(item.getChildText("amount"));
+                    double weight = Double.valueOf(item.getChildText("weight"));
+                    String displayName = testAndParseDisp(item.getChildText("displayName"));
+                    String[] lore = testAndParseLore(item.getChildText("lore"));
+                    ItemType type = ItemType.fromStringAndData(machineName, data);
+                    if (type != null) {
+                        Item temp = Canary.factory().getItemFactory().newItem(type, data, amount);
+                        if (displayName != null) {
+                            temp.setDisplayName(displayName);
+                        }
+                        if (lore != null) {
+                            temp.setLore(lore);
+                        }
+                        if (item.getChild("nbt") != null) {
+                            testparseapplyNBT(item.getChild("nbt"), temp);
+                        }
+
+                        item_list.add(new WeightedItem(temp, weight));
                     }
                     else {
-                        onlotto.getLogman().warn("Tried to load a non-existent item: ID=" + id);
+                        onlotto.getLogman().warn("Tried to load a non-existent item: Name=" + machineName);
                     }
                 }
             }
-            catch (DataConversionException dcex) {
-                onlotto.getLogman().error("Failed to load an Item...", dcex);
-                continue;
+            catch (Exception ex) {
+                onlotto.getLogman().error("Failed to load an item #" + items.indexOf(item), ex);
             }
         }
         return item_list.toArray(new WeightedItem[item_list.size()]);
+    }
+
+    private String[] testAndParseLore(String element) {
+        String[] temp = element == null || element.isEmpty() ? null : element.split("\\n");
+        return temp == null || temp.length == 0 ? null : temp;
+    }
+
+    private String testAndParseDisp(String element) {
+        return element == null || element.isEmpty() ? null : element;
+    }
+
+    private void testparseapplyNBT(Element main, Item temp) {
+        NBTFactory factory = Canary.factory().getNBTFactory();
+        temp.setDataTag(factory.newCompoundTag("tag")); // Need a datatag
+        for (Element toSet : main.getChildren()) {
+            // Let it throw the error and stop the loading of the item
+            NBTTagType setType = NBTTagType.valueOf(toSet.getAttributeValue("type").toUpperCase());
+            if (setType == NBTTagType.LIST) {
+                ListTag<BaseTag> working = factory.newListTag();
+                temp.getDataTag().put(toSet.getName(), working);
+                recursiveList(toSet, working);
+            }
+            else if (setType == NBTTagType.COMPOUND) {
+                CompoundTag workingTag = factory.newCompoundTag(toSet.getName());
+                temp.getDataTag().put(toSet.getName(), workingTag);
+                recursiveCompund(workingTag, toSet);
+            }
+            else {
+                temp.getDataTag().put(toSet.getName(), getForType(setType, toSet.getValue()));
+            }
+        }
+    }
+
+    private void recursiveCompund(CompoundTag workTag, Element workElement) {
+        NBTFactory factory = Canary.factory().getNBTFactory();
+        for (Element subElement : workElement.getChildren()) {
+            NBTTagType workingType = NBTTagType.valueOf(subElement.getAttributeValue("type").toUpperCase());
+            if (workingType == NBTTagType.COMPOUND) {
+                CompoundTag workingTag = factory.newCompoundTag(subElement.getName());
+                workTag.put(subElement.getName(), workingTag);
+                recursiveCompund(workingTag, subElement);
+            }
+            else if (workingType == NBTTagType.LIST) {
+                ListTag<BaseTag> working = factory.newListTag();
+                workTag.put(subElement.getName(), working);
+                recursiveList(subElement, working);
+            }
+            else {
+                workTag.put(subElement.getName(), getForType(workingType, subElement.getValue()));
+            }
+        }
+    }
+
+    private void recursiveList(Element working, ListTag listTag) {
+        NBTFactory factory = Canary.factory().getNBTFactory();
+        for (Element sub : working.getChildren()) {
+            NBTTagType subType = NBTTagType.valueOf(sub.getAttributeValue("type").toUpperCase());
+            if (subType == NBTTagType.COMPOUND) {
+                CompoundTag workingTag = factory.newCompoundTag(sub.getName());
+                listTag.add(workingTag);
+                recursiveCompund(workingTag, sub);
+            }
+            else if (subType == NBTTagType.LIST) {
+                ListTag<BaseTag> workingTag = factory.newListTag();
+                listTag.add(workingTag);
+                recursiveList(sub, workingTag);
+            }
+            else {
+                listTag.add(getForType(subType, sub.getValue()));
+            }
+        }
+    }
+
+    private BaseTag getForType(NBTTagType type, String value) {
+        NBTFactory factory = Canary.factory().getNBTFactory();
+        switch (type) {
+            case BYTE:
+                return factory.newByteTag(Byte.valueOf(value));
+            case BYTE_ARRAY:
+                return factory.newByteArrayTag(StringUtils.stringToByteArray(value));
+            case DOUBLE:
+                return factory.newDoubleTag(Double.valueOf(value));
+            case FLOAT:
+                return factory.newFloatTag(Float.valueOf(value));
+            case INT:
+                return factory.newIntTag(Integer.valueOf(value));
+            case INT_ARRAY:
+                return factory.newIntArrayTag(StringUtils.stringToIntArray(value));
+            case LONG:
+                return factory.newLongTag(Long.valueOf(value));
+            case SHORT:
+                return factory.newShortTag(Short.valueOf(value));
+            case STRING:
+                return factory.newStringTag(value);
+            default:
+                return null;
+        }
     }
 }

@@ -14,7 +14,7 @@ Copyright © 2011-2014 Visual Illusions Entertainment
     <version>2.0.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <canary.main.class>${project.groupId}.${project.artifactId}.${project.name}</canary.main.class>
+        <canary.main.class>${project.groupId}.${project.artifactId}.OnLotto</canary.main.class>
         <vimcplugin.version>1.1.0-SNAPSHOT</vimcplugin.version>
         <status.url>http://status.visualillusionsent.net/</status.url>
         <devs>darkdiplomat</devs>
@@ -70,14 +70,14 @@ Copyright © 2011-2014 Visual Illusions Entertainment
     <distributionManagement>
         <repository>
             <id>vi-repo</id>
-            <url>http://repo2.visualillusionsent.net/repository/public</url>
+            <url>http://repo2.visualillusionsent.net/repository/public/</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
             <id>vi-repo</id>
             <name>Visual Illusions Repository</name>
-            <url>http://repo2.visualillusionsent.net/repository/public</url>
+            <url>http://repo2.visualillusionsent.net/repository/public/</url>
         </repository>
     </repositories>
     <dependencies>

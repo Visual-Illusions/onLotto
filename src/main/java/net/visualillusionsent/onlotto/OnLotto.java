@@ -58,7 +58,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
     }
 
     final boolean everyoneWins() {
-        return true; // TODO
+        return lottoProps.getBoolean("everyone.wins");
     }
 
     final void setStart(long time) {
