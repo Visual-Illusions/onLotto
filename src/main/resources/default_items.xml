@@ -2809,7 +2809,7 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         </nbt>
     </item>
     <item>
-        <!-- Goron Tunic 333-->
+        <!-- Goron Tunic -->
         <name>minecraft:leather_chestplate</name>
         <enabled>yes</enabled>
         <data>0</data>
@@ -4422,6 +4422,59 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <data>0</data>
         <amount>1</amount>
         <weight>5.0</weight>
+    </item>
+    <item>
+        <!-- A Ghastly Secret, By Dinnerbone (Book) -->
+        <name>minecraft:written_book</name>
+        <enabled>yes</enabled>
+        <data>0</data>
+        <amount>1</amount>
+        <weight>5.0</weight>
+        <nbt>
+            <title type="STRING">A Ghastly Secret</title>
+            <author type="STRING">Dinnerbone</author>
+            <pages type="LIST">
+                <!-- Note the whitespace here, it is necessary and should not be removed -->
+                <page type="STRING">
+                    Minecraft has a secret. This is normal, everything and everyone has secrets, but we're not interested in those. We're interested in the Minecraft secret.
+
+                    It is said by those who know that this secret has changed the way that they will forever
+                </page>
+                <page type="STRING">
+                    view Minecraft. It is claimed that those who discover this secret are driven into deep regret, flooded with a want, a need to forget that they ever found out.
+
+                    Only the foolish and the brave, though it could be argued these are one and the same,
+                </page>
+                <page type="STRING">
+                    would dare to try and purposefully find the secret behind Minecraft.
+
+                    Heed these warnings, turning the pages any further than this will teach you something you cannot forget. Do not think this risk trivial.
+                </page>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING">
+                    This is your last warning.
+
+                    Do not turn the page.
+                </page>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING"/>
+                <page type="STRING">
+                    (The remaining pages are missing. There are scorch marks on the final cover, and torn remains in the gutter)
+                </page>
+            </pages>
+        </nbt>
     </item>
     <item>
         <!-- Emerald -->
