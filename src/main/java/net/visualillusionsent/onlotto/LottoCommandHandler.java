@@ -4,15 +4,15 @@
  * Copyright © 2011-2014 Visual Illusions Entertainment
  *
  * onLotto is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
+ * it under the terms of the ${gpl.type} as published by
  * the Free Software Foundation, either version 3 of the License,
  * or (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
  * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
+ * See the ${gpl.type} for more details.
  *
- * You should have received a copy of the GNU General Public License along with this program.
+ * You should have received a copy of the ${gpl.type} along with this program.
  * If not, see http://www.gnu.org/licenses/gpl.html.
  */
 package net.visualillusionsent.onlotto;
@@ -25,6 +25,7 @@ import net.canarymod.commandsys.CommandDependencyException;
 import net.canarymod.commandsys.TabComplete;
 import net.canarymod.commandsys.TabCompleteHelper;
 import net.visualillusionsent.minecraft.plugin.ModMessageReceiver;
+import net.visualillusionsent.minecraft.plugin.canary.CanaryMessageReceiver;
 import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPluginInformationCommand;
 
 import java.util.Iterator;
@@ -40,8 +41,7 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
             aliases = { "onlotto" },
             description = "Information Command",
             permissions = { "" },
-            toolTip = "/onlotto",
-            tabCompleteMethod = "lottoTabComplete"
+            toolTip = "/onlotto"
     )
     public final void lottobase(MessageReceiver msgrec, String[] args) {
         super.sendInformation(msgrec);
@@ -50,7 +50,7 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
     @Override
     protected void messageInject(ModMessageReceiver mmr) {
         //-- Help --
-        MessageReceiver receiver = mmr.unwrap();
+        MessageReceiver receiver = ((CanaryMessageReceiver)mmr).unwrap();
         if (receiver.hasPermission("onlotto.time")) {
             mmr.message("§2/onLotto time §6- displays time till drawing");
         }
@@ -116,7 +116,7 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
     @Command(
             aliases = { "debug" },
             description = "Give the specified Item index for debugging purposes",
-            permissions = { "onlotto.reload" },
+            permissions = { "onlotto.debug" },
             toolTip = "/onlotto debug <item#>",
             parent = "onlotto",
             min = 2
@@ -142,7 +142,7 @@ public final class LottoCommandHandler extends VisualIllusionsCanaryPluginInform
         }
     }
 
-    @TabComplete
+    @TabComplete(commands = "onlotto")
     public final List<String> lottoTabComplete(MessageReceiver msgrec, String[] args) {
         if (args.length != 1) {
             return null;

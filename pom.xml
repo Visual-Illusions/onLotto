@@ -15,10 +15,18 @@ Copyright © 2011-2014 Visual Illusions Entertainment
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <canary.main.class>${project.groupId}.${project.artifactId}.OnLotto</canary.main.class>
-        <vimcplugin.version>1.1.0-SNAPSHOT</vimcplugin.version>
+        <mcpluginlib.version>1.2.0-SNAPSHOT</mcpluginlib.version>
         <status.url>http://status.visualillusionsent.net/</status.url>
         <devs>darkdiplomat</devs>
+        <license.type>GNU General Public License v3</license.type>
+        <license.url>http://www.gnu.org/licenses/gpl.html</license.url>
+        <copyright.years>${project.inceptionYear}-${current.year}</copyright.years>
         <build.number/>
+        <!-- Jar Signing -->
+        <keystore.path/>
+        <keystore.pass/>
+        <keystore.alias/>
+        <keystore.key.pass/>
     </properties>
     <organization>
         <name>Visual Illusions Entertainment</name>
@@ -70,25 +78,37 @@ Copyright © 2011-2014 Visual Illusions Entertainment
     <distributionManagement>
         <repository>
             <id>vi-repo</id>
-            <url>http://repo2.visualillusionsent.net/repository/public/</url>
+            <url>http://repo.visualillusionsent.net/repository/public/</url>
         </repository>
     </distributionManagement>
     <repositories>
         <repository>
             <id>vi-repo</id>
             <name>Visual Illusions Repository</name>
-            <url>http://repo2.visualillusionsent.net/repository/public/</url>
+            <url>http://repo.visualillusionsent.net/repository/public/</url>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>net.visualillusionsent</groupId>
-            <artifactId>vimcplugin</artifactId>
-            <version>${vimcplugin.version}</version>
+            <artifactId>mcpluginlib</artifactId>
+            <version>${mcpluginlib.version}</version>
         </dependency>
     </dependencies>
     <build>
-        <finalName>${project.name}-${project.version}-${build.number}</finalName>
+        <finalName>${project.name}-${project.version}${build.number}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.inf</include>
+                    <include>*.xml</include>
+                    <include>META-INF/**</include>
+                    <include>resources/**</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <!-- Timestamp for year -->
             <plugin>
@@ -107,51 +127,6 @@ Copyright © 2011-2014 Visual Illusions Entertainment
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <!-- Update Plugin/Mod Description Files -->
-            <plugin>
-                <groupId>com.google.code.maven-replacer-plugin</groupId>
-                <artifactId>replacer</artifactId>
-                <version>1.5.2</version>
-                <executions>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>replace</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <includes>
-                        <!-- CanaryMod -->
-                        <include>target/**/*.inf</include>
-                        <!-- Other files -->
-                        <include>target/**/*.cfg</include>
-                        <include>target/**/*.txt</include>
-                        <include>target/**/*.lang</include>
-                        <include>target/**/*.readme</include>
-                        <include>target/**/*.xml</include>
-                    </includes>
-                    <replacements>
-                        <replacement>
-                            <token>{plugin.version}</token>
-                            <value>${project.version}</value>
-                        </replacement>
-                        <replace>
-                            <token>{copyright.years}</token>
-                            <value>${project.inceptionYear}-${current.year}</value>
-                        </replace>
-                        <replace>
-                            <token>{name}</token>
-                            <value>${project.name}</value>
-                        </replace>
-                        <replace>
-                            <token>{canary.main.class}</token>
-                            <value>${canary.main.class}</value>
-                        </replace>
-                    </replacements>
-                    <regex>false</regex>
-                </configuration>
             </plugin>
             <!-- Compile plugin -->
             <plugin>
@@ -219,7 +194,7 @@ Copyright © 2011-2014 Visual Illusions Entertainment
                     <properties>
                         <name>${project.name}</name>
                         <years>${project.inceptionYear}-${current.year}</years>
-                        <gpl.type>GNU General Public License</gpl.type>
+                        <license.type>GNU General Public License</license.type>
                         <license.url>http://www.gnu.org/licenses/gpl.html</license.url>
                     </properties>
                     <includes>
@@ -242,12 +217,12 @@ Copyright © 2011-2014 Visual Illusions Entertainment
                             <artifactSet>
                                 <includes>
                                     <!-- Only need to shade the VIMCPlugin stuff -->
-                                    <include>net.visualillusionsent:vimcplugin</include>
+                                    <include>net.visualillusionsent:mcpluginlib</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                                 <filter>
-                                    <artifact>net.visualillusionsent:vimcplugin</artifact>
+                                    <artifact>net.visualillusionsent:mcpluginlib</artifact>
                                     <includes>
                                         <!-- Always include the license stuff -->
                                         <include>META-INF/license/**</include>
@@ -255,9 +230,8 @@ Copyright © 2011-2014 Visual Illusions Entertainment
                                         <include>net/visualillusionsent/minecraft/plugin/**</include>
                                     </includes>
                                     <excludes>
-                                        <!-- Bukkit/Spout are unused at this time -->
-                                        <exclude>net/visualillusionsent/minecraft/plugin/bukkit/**</exclude>
-                                        <exclude>net/visualillusionsent/minecraft/plugin/spout/**</exclude>
+                                        <!-- Sponge is unused at this time -->
+                                        <exclude>net/visualillusionsent/minecraft/plugin/sponge/**</exclude>
                                     </excludes>
                                 </filter>
                             </filters>
@@ -275,4 +249,57 @@ Copyright © 2011-2014 Visual Illusions Entertainment
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>jenkins</id>
+            <activation>
+                <property>
+                    <name>BUILD_NUMBER</name>
+                </property>
+            </activation>
+            <properties>
+                <build.number>-b${BUILD_NUMBER}</build.number>
+            </properties>
+        </profile>
+        <!-- Should remain last profile -->
+        <profile>
+            <id>sign-jar</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jarsigner-plugin</artifactId>
+                        <version>1.3.2</version>
+                        <executions>
+                            <execution>
+                                <id>sign</id>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>verify</id>
+                                <goals>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <archiveDirectory>target/</archiveDirectory>
+                            <excludes>
+                                <exclude>*.jar</exclude>
+                            </excludes>
+                            <includes>
+                                <include>${project.name}*.jar</include>
+                            </includes>
+                            <keystore>${keystore.path}</keystore>
+                            <alias>${keystore.alias}</alias>
+                            <storepass>${keystore.pass}</storepass>
+                            <keypass>${keystore.key.pass}</keypass>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

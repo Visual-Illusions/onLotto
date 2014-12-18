@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 onLotto Items configuration
-Copyright © {copyright.years} Visual Illusions Entertainment
-Licensed under the {gpl.type}
+Copyright © ${copyright.years} Visual Illusions Entertainment
+Licensed under the ${license.type}
 
 Example Item  ( * == Required Element  [Don't place * in the actual elements area] )
 <item>
@@ -4434,44 +4434,35 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
             <title type="STRING">A Ghastly Secret</title>
             <author type="STRING">Dinnerbone</author>
             <pages type="LIST">
-                <!-- Note the whitespace here, it is necessary and should not be removed -->
                 <page type="STRING">
-                    Minecraft has a secret. This is normal, everything and everyone has secrets, but we're not interested in those. We're interested in the Minecraft secret.
-                    
-It is said by those who know that this secret has changed the way that they will forever
+                    {"text":"Minecraft has a secret. This is normal, everything and everyone has secrets, but we're not interested in those. We're interested in the Minecraft secret\n\nIt is said by those who know that this secret has changed the way that they will forever"}
                 </page>
                 <page type="STRING">
-                    view Minecraft. It is claimed that those who discover this secret are driven into deep regret, flooded with a want, a need to forget that they ever found out.
-                    
-Only the foolish and the brave, though it could be argued these are one and the same,    
+                    {"text":"view Minecraft. It is claimed that those who discover this secret are driven into deep regret, flooded with a want, a need to forget that they ever found out.\n\nOnly the foolish and the brave, though it could be argued these are one and the same,"}
                 </page>
                 <page type="STRING">
-                    would dare to try and purposefully find the secret behind Minecraft.
-                    
-Heed these warnings, turning the pages any further than this will teach you something you cannot forget. Do not think this risk trivial.
+                    {"text":"would dare to try and purposefully find the secret behind Minecraft.\n\nHeed these warnings, turning the pages any further than this will teach you something you cannot forget. Do not think this risk trivial."}
                 </page>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
                 <page type="STRING">
-                    This is your last warning.
-
-Do not turn the page.
+                    {"text":"This is your last warning.\n\nDo not turn the page."}
                 </page>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
-                <page type="STRING"/>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
+                <page type="STRING">{"text":""}</page>
                 <page type="STRING">
-                    (The remaining pages are missing. There are scorch marks on the final cover, and torn remains in the gutter)
+                    {"text":"(The remaining pages are missing. There are scorch marks on the final cover, and torn remains in the gutter)"}
                 </page>
             </pages>
         </nbt>
@@ -4580,6 +4571,10 @@ Do not turn the page.
         <amount>1</amount>
         <weight>5.0</weight>
     </item>
+    <!-- A Note with skinned skulls, the skin may not appear if the user has never joined the server
+         Alternatively, you can try to put in the Properties and Textures manually but may end up expiring over time,
+         be sure to match the nbt design exactly as it can crash the client and ruin the player's dat files.
+     -->
     <item>
         <!-- darkdiplomat Skull -->
         <name>minecraft:skull</name>
@@ -4588,10 +4583,26 @@ Do not turn the page.
         <amount>1</amount>
         <weight>5.0</weight>
         <lore>
-            Owner and Founder of Visual Illusions Entertainment
+            Owner and Founder of
+            Visual Illusions Entertainment
         </lore>
         <nbt>
-            <SkullOwner type="String">darkdiplomat</SkullOwner>
+            <SkullOwner type="COMPOUND">
+                <Name type="STRING">darkdiplomat</Name>
+                <Id type="STRING">9d9c2f64-689b-41de-bce0-8fe64934c961</Id>
+                <Properties type="COMPOUND">
+                    <textures type="LIST">
+                        <Zero type="COMPOUND">
+                            <Value type="STRING">
+                                eyJ0aW1lc3RhbXAiOjE0MTg5MzAzOTI2MjgsInByb2ZpbGVJZCI6ImY3NGM5NDYyZTIxZTQwMzA4ZGZhZDI1YjMzYmFhMjc5IiwicHJvZmlsZU5hbWUiOiJkYW1hZ2VmaWx0ZXIiLCJpc1B1YmxpYyI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUwZjg3ZGU4Y2ZjNzVmMTEzMmU4NGYzNDQ2YWJiNDk0NzNmM2QyZjc1N2I1NTkxZDYwNzQ1YTIwZWUyNjVkYTUifX19
+                            </Value>
+                            <Signature type="STRING">
+                                eGQPRtxZCNhZ3AZkEH2NDZQ96JVeNvV0G6ZDvWBUeb4pQnCdOi3PlJLX9OosrKjH/vWGOPeDEfleavKmFN0hOlYczxgEcGHZKL7fIJb1kBhH8iSSGfOpV/wexOTVtiGFXgCGPEWrE9EmQ6WM3PNl3pvm2PIl/MbIS50J0FfLQ83YPJndqHz9/yDy9duXDw+rL0RapHEyXOvw4sFbTSyWlWg0euRTzX7JLb9151vzDKj2pnR44Wa1E4moJyPhbgCcXIx177Pp60JPk5SPq6Tz5Z6Ejcbg/iftjYH8UAJ3+8YeqXDe6MVh1hfY+RTSdzuG8L2340rJ+cDGou3RB3oZhhCs6kVDvMpo6C8cBuD/caocJrf7/rOO+ZxuOGJpCd+FzBE7Mwe64tc8HSK9WCAS7cUyIyK4wdSvRN/fjcG3fV2q/tBe60PIWCDmPtnu3UFg7pcCyZ2OxYtJnqQVHDcS9XyMuFTfuxpJVuJZTgiWg5y65J0qHC6rWC8uMw19r777DrwPKUkKmWOAHdQCbq2+010SzKrb022Tds8PYvMTkb9STpWoaBqm/z9ISS6xnuVfeM+IEcoSZpOFYEh0jbshOH8Fp+wH58iVZ+ZW+uaFFdDpjifK/0vc9L6DhdoecqoiM85BAmdNmmoGwSywunX//A9VQx30ILnWK6dqLQFWq9c=
+                            </Signature>
+                        </Zero>
+                    </textures>
+                </Properties>
+            </SkullOwner>
         </nbt>
     </item>
     <item>
@@ -4605,7 +4616,11 @@ Do not turn the page.
             Visual Illusion Java Developer
         </lore>
         <nbt>
-            <SkullOwner type="String">xsomnersx</SkullOwner>
+            <SkullOwner type="COMPOUND">
+                <!-- TODO: Fix somners ign and profile -->
+                <Name type="STRING">xsomersx</Name>
+                <Id type="STRING">d3d78bfb-ccd8-4274-86d1-bfeddc7ec965</Id>
+            </SkullOwner>
         </nbt>
     </item>
     <item>
@@ -4619,7 +4634,22 @@ Do not turn the page.
             Visual Illusion Java Developer
         </lore>
         <nbt>
-            <SkullOwner type="String">TheLolzKing</SkullOwner>
+            <SkullOwner type="COMPOUND">
+                <Name type="STRING">TheLolzKing</Name>
+                <Id type="STRING">8855e894-8682-4bfe-a32e-43caf51f1bf4</Id>
+                <Properties type="COMPOUND">
+                    <textures type="LIST">
+                        <Zero type="COMPOUND">
+                            <Value type="STRING">
+                                eyJ0aW1lc3RhbXAiOjE0MTg5MzI4NDU3MjgsInByb2ZpbGVJZCI6Ijg4NTVlODk0ODY4MjRiZmVhMzJlNDNjYWY1MWYxYmY0IiwicHJvZmlsZU5hbWUiOiJUaGVMb2x6S2luZyIsImlzUHVibGljIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmM0MmFhNDY1NjU3MjQyZGMyYWJjZWI2NjM4MGZkNTQzZTFlOThhZDkzOTc2MzdmYmU2ODM3NGE0MjlmNTE4In19fQ==
+                            </Value>
+                            <Signature type="STRING">
+                                R0kTHvCXIslw6TJlOiFLX6j6cdK8EoC+2M7pODSZmKojydrE6WOPLTQIOd8ng3u5/xDLJwywJ6u+vstYKIQ4dwGMS0bjcnsnyXfTS4a+atSU1sFL3Y8zKjHNoqIGQhRDRDUb0Pa0H2mx3k2qs0tLEckkDg2WkUTQJaOOwgCgPoHrykLAuQQIxkD9p1vQppBUUQzHwu4ZnFyLwGbvjVKdBFYgU30gnWysTZmby2u54/ebHhlV0AvPChcrpLxtg1ViQPd8NPOTMeozMxmBLiHK+gZnXGMsWHikVOb/73p8d1xxdoNqLWfteR6tN8IXxZHCDPKeqafglSaE8dgHj7vvQO6QzDTIMvwi37owR7gxbezFACpCGhAHOBd8k4/yuI6aZm5oS9lddO87ZuoH6ebZOUmulNg5BdWqwe6kj0O9rSvTivowIe/bnKSxoRRvPpA743ATcPkTkdhXZCPhBHBWuu408NOXdWcE54QifmgOcUdCWpApeif9d6k5jr4nlsZPzDCsl+z/Xzf9hmK16Tf134pa9XXZ5qD83ISnIPnpqcwwKGG11NzFk6YgByLLENYF5cCL3Mv5BoAZB44SNCFbaeYhphqts3mIQFhEkyeKYyM3hfvPvfrm+A6Ip73RsZtJGwWPXQHiOPHqpFL4Q/D4ZVTVd+EX/BGRmKkfmu641qg=
+                            </Signature>
+                        </Zero>
+                    </textures>
+                </Properties>
+            </SkullOwner>
         </nbt>
     </item>
     <item>
@@ -4631,10 +4661,26 @@ Do not turn the page.
         <weight>5.0</weight>
         <lore>
             Close friend of darkdiplomat
-            Some people believe that they are the same people.
+            Some people believe that
+            they are actually one in the same
         </lore>
         <nbt>
-            <SkullOwner type="String">damagefilter</SkullOwner>
+            <SkullOwner type="COMPOUND">
+                <Name type="STRING">damagefilter</Name>
+                <Id type="STRING">f74c9462-e21e-4030-8dfa-d25b33baa279</Id>
+                <Properties type="COMPOUND">
+                    <textures type="LIST">
+                        <Zero type="COMPOUND">
+                            <Value type="STRING">
+                                eyJ0aW1lc3RhbXAiOjE0MTg5MzAzOTI2MjgsInByb2ZpbGVJZCI6ImY3NGM5NDYyZTIxZTQwMzA4ZGZhZDI1YjMzYmFhMjc5IiwicHJvZmlsZU5hbWUiOiJkYW1hZ2VmaWx0ZXIiLCJpc1B1YmxpYyI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUwZjg3ZGU4Y2ZjNzVmMTEzMmU4NGYzNDQ2YWJiNDk0NzNmM2QyZjc1N2I1NTkxZDYwNzQ1YTIwZWUyNjVkYTUifX19
+                            </Value>
+                            <Signature type="STRING">
+                                eGQPRtxZCNhZ3AZkEH2NDZQ96JVeNvV0G6ZDvWBUeb4pQnCdOi3PlJLX9OosrKjH/vWGOPeDEfleavKmFN0hOlYczxgEcGHZKL7fIJb1kBhH8iSSGfOpV/wexOTVtiGFXgCGPEWrE9EmQ6WM3PNl3pvm2PIl/MbIS50J0FfLQ83YPJndqHz9/yDy9duXDw+rL0RapHEyXOvw4sFbTSyWlWg0euRTzX7JLb9151vzDKj2pnR44Wa1E4moJyPhbgCcXIx177Pp60JPk5SPq6Tz5Z6Ejcbg/iftjYH8UAJ3+8YeqXDe6MVh1hfY+RTSdzuG8L2340rJ+cDGou3RB3oZhhCs6kVDvMpo6C8cBuD/caocJrf7/rOO+ZxuOGJpCd+FzBE7Mwe64tc8HSK9WCAS7cUyIyK4wdSvRN/fjcG3fV2q/tBe60PIWCDmPtnu3UFg7pcCyZ2OxYtJnqQVHDcS9XyMuFTfuxpJVuJZTgiWg5y65J0qHC6rWC8uMw19r777DrwPKUkKmWOAHdQCbq2+010SzKrb022Tds8PYvMTkb9STpWoaBqm/z9ISS6xnuVfeM+IEcoSZpOFYEh0jbshOH8Fp+wH58iVZ+ZW+uaFFdDpjifK/0vc9L6DhdoecqoiM85BAmdNmmoGwSywunX//A9VQx30ILnWK6dqLQFWq9c=
+                            </Signature>
+                        </Zero>
+                    </textures>
+                </Properties>
+            </SkullOwner>
         </nbt>
     </item>
     <item>
