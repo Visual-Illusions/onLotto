@@ -78,7 +78,7 @@ public final class LottoTask extends TimerTask {
             }
         }
         if (players.isEmpty()) {
-            Canary.getServer().broadcastMessage("No one online eligable to win...");
+            Canary.getServer().broadcastMessage("No one online eligible to win...");
         }
         else {
             ArrayList<String> winners = new ArrayList<String>();

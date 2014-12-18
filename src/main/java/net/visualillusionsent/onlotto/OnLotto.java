@@ -18,8 +18,9 @@
 package net.visualillusionsent.onlotto;
 
 import net.canarymod.ToolBox;
+import net.canarymod.api.GameMode;
 import net.canarymod.api.entity.living.humanoid.Player;
-import net.canarymod.chat.TextFormat;
+import net.visualillusionsent.minecraft.plugin.ChatFormat;
 import net.visualillusionsent.minecraft.plugin.canary.VisualIllusionsCanaryPlugin;
 import net.visualillusionsent.utils.PropertiesFile;
 
@@ -91,6 +92,15 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
                 return false;
             }
         }
+        if (player.getMode().equals(GameMode.CREATIVE) && lottoProps.getBoolean("disable.creative")) {
+            return false;
+        }
+        else if (player.getMode().equals(GameMode.ADVENTURE) && lottoProps.getBoolean("disable.adventure")) {
+            return false;
+        }
+        else if (player.getMode().equals(GameMode.SPECTATOR) && lottoProps.getBoolean("disable.spectator")) {
+            return false;
+        }
         return true;
     }
 
@@ -99,7 +109,7 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
     }
 
     final String timeUntil() {
-        return String.format("%sNext Drawing in%s %s", TextFormat.GREEN, TextFormat.YELLOW, ToolBox.getTimeUntil(started, (getDelayTime() / 1000)));
+        return String.format("%sNext Drawing in%s %s", ChatFormat.GREEN, ChatFormat.YELLOW, ToolBox.getTimeUntil(started, (getDelayTime() / 1000)));
     }
 
     final void restartTimer() {
@@ -117,6 +127,12 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
         lottoProps.setComments("max.winners", "The number of winners to choose unless everyone.wins is set");
         lottoProps.getStringArray("disabled.groups", new String[]{ "admins", "mods", "visitors" });
         lottoProps.setComments("disabled.groups", "The names of the groups to not allow winning. No parent checking is done so every group needs to be directly specified. Seperate names with commas");
+        lottoProps.getBoolean("disable.creative", true);
+        lottoProps.setComments("disable.creative", "Disables winning items while in Creative Mode");
+        lottoProps.getBoolean("disable.adventure", true);
+        lottoProps.setComments("disable.adventure", "Disables winning items while in Adventure Mode");
+        lottoProps.getBoolean("disable.spectator", true);
+        lottoProps.setComments("disable.spectator", "Disables winning items while in Spectator Mode");
         lottoProps.getLong("draw.delay", 1L);
         lottoProps.setComments("draw.delay", "The time in minutes between drawings");
         lottoProps.getLong("timer.started", 0L);
