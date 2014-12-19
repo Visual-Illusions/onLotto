@@ -226,6 +226,8 @@ Copyright © 2011-2014 Visual Illusions Entertainment
                                     <includes>
                                         <!-- Always include the license stuff -->
                                         <include>META-INF/license/**</include>
+                                        <!-- Always include the Root certificate -->
+                                        <include>META-INF/certificates/**</include>
                                         <!-- Always include base VIMCPlugin stuff -->
                                         <include>net/visualillusionsent/minecraft/plugin/**</include>
                                     </includes>
