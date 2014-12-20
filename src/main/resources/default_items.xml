@@ -947,21 +947,101 @@ Example Item  ( * == Required Element  [Don't place * in the actual elements are
         <weight>5.0</weight>
     </item>
     <item>
+        <!-- Mob Spawner (Chicken) -->
+        <name>minecraft:mob_spawner</name>
+        <enabled>yes</enabled>
+        <data>0</data>
+        <amount>1</amount>
+        <weight>5.0</weight>
+        <displayName>Chicken Spawner</displayName>
+        <nbt>
+            <BlockEntityTag type="COMPOUND">
+                <EntityId type="STRING">Chicken</EntityId>
+                <Delay type="SHORT">20</Delay>
+                <MinSpawnDelay type="SHORT">200</MinSpawnDelay>
+                <MaxSpawnDelay type="SHORT">800</MaxSpawnDelay>
+                <SpawnCount type="SHORT">4</SpawnCount>
+                <MaxNearbyEntities type="SHORT">6</MaxNearbyEntities>
+                <RequiredPlayerRange type="SHORT">16</RequiredPlayerRange>
+                <SpawnRange type="SHORT">4</SpawnRange>
+            </BlockEntityTag>
+        </nbt>
+    </item>
+    <item>
+        <!-- Mob Spawner (Cow) -->
+        <name>minecraft:mob_spawner</name>
+        <enabled>yes</enabled>
+        <data>0</data>
+        <amount>1</amount>
+        <weight>5.0</weight>
+        <displayName>Cow Spawner</displayName>
+        <nbt>
+            <BlockEntityTag type="COMPOUND">
+                <EntityId type="STRING">Cow</EntityId>
+                <Delay type="SHORT">20</Delay>
+                <MinSpawnDelay type="SHORT">200</MinSpawnDelay>
+                <MaxSpawnDelay type="SHORT">800</MaxSpawnDelay>
+                <SpawnCount type="SHORT">4</SpawnCount>
+                <MaxNearbyEntities type="SHORT">6</MaxNearbyEntities>
+                <RequiredPlayerRange type="SHORT">16</RequiredPlayerRange>
+                <SpawnRange type="SHORT">4</SpawnRange>
+            </BlockEntityTag>
+        </nbt>
+    </item>
+    <item>
         <!-- Mob Spawner (Sheep) -->
         <name>minecraft:mob_spawner</name>
         <enabled>yes</enabled>
         <data>0</data>
         <amount>1</amount>
         <weight>5.0</weight>
+        <displayName>Sheep Spawner</displayName>
         <nbt>
-            <EntityId type="STRING">Sheep</EntityId>
-            <Delay type="SHORT">20</Delay>
-            <MinSpawnDelay type="SHORT">200</MinSpawnDelay>
-            <MaxSpawnDelay type="SHORT">800</MaxSpawnDelay>
-            <SpawnCount type="SHORT">4</SpawnCount>
-            <MaxNearbyEntities type="SHORT">6</MaxNearbyEntities>
-            <RequiredPlayerRange type="SHORT">16</RequiredPlayerRange>
-            <SpawnRange type="SHORT">4</SpawnRange>
+            <BlockEntityTag type="COMPOUND">
+                <EntityId type="STRING">Sheep</EntityId>
+                <Delay type="SHORT">20</Delay>
+                <MinSpawnDelay type="SHORT">200</MinSpawnDelay>
+                <MaxSpawnDelay type="SHORT">800</MaxSpawnDelay>
+                <SpawnCount type="SHORT">4</SpawnCount>
+                <MaxNearbyEntities type="SHORT">6</MaxNearbyEntities>
+                <RequiredPlayerRange type="SHORT">16</RequiredPlayerRange>
+                <SpawnRange type="SHORT">4</SpawnRange>
+            </BlockEntityTag>
+        </nbt>
+    </item>
+    <item>
+        <!-- Mob Spawner (Livestock) -->
+        <name>minecraft:mob_spawner</name>
+        <enabled>yes</enabled>
+        <data>0</data>
+        <amount>1</amount>
+        <weight>5.0</weight>
+        <displayName>Random Livestock Spawner</displayName>
+        <nbt>
+            <BlockEntityTag type="COMPOUND">
+                <EntityId type="STRING">Pig</EntityId>
+                <Delay type="SHORT">20</Delay>
+                <MinSpawnDelay type="SHORT">200</MinSpawnDelay>
+                <MaxSpawnDelay type="SHORT">800</MaxSpawnDelay>
+                <SpawnCount type="SHORT">4</SpawnCount>
+                <MaxNearbyEntities type="SHORT">6</MaxNearbyEntities>
+                <RequiredPlayerRange type="SHORT">16</RequiredPlayerRange>
+                <SpawnRange type="SHORT">4</SpawnRange>
+                <SpawnPotentials type="LIST">
+                    <spawn type="COMPOUND">
+                        <Type type="STRING">Cow</Type>
+                        <Weight type="INT">1</Weight>
+                    </spawn>
+                    <spawn type="COMPOUND">
+                        <Type type="STRING">Chicken</Type>
+                        <Weight type="INT">1</Weight>
+                    </spawn>
+                    <spawn type="COMPOUND">
+                        <Type type="STRING">Pig</Type>
+                        <Weight type="INT">1</Weight>
+                    </spawn>
+                </SpawnPotentials>
+            </BlockEntityTag>
         </nbt>
     </item>
     <item>
