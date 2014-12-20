@@ -133,9 +133,9 @@ public final class OnLotto extends VisualIllusionsCanaryPlugin {
         lottoProps.setComments("disable.adventure", "Disables winning items while in Adventure Mode");
         lottoProps.getBoolean("disable.spectator", true);
         lottoProps.setComments("disable.spectator", "Disables winning items while in Spectator Mode");
-        lottoProps.getLong("draw.delay", 1L);
-        lottoProps.setComments("draw.delay", "The time in minutes between drawings");
-        lottoProps.getLong("timer.started", 0L);
+        lottoProps.getLong("draw.delay", 30);
+        lottoProps.setComments("draw.delay", "The time in minutes between drawings (default: 30)");
+        lottoProps.getLong("timer.started", 0);
         lottoProps.setComments("timer.started", "* DO NOT EDIT THIS PROPERTY * (Resets the timer between restarts)");
         lottoProps.save();
     }
